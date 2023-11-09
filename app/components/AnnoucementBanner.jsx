@@ -1,4 +1,4 @@
-const AnnooucementBaner = () => {
+const AnnouncementBanner  = () => {
     return ( 
         <div className="bg-gradient-to-r from-red-700 to-red-500">
         <div className="max-w-[85rem] px-4 py-4 sm:px-6 lg:px-8 mx-auto">
@@ -34,4 +34,4 @@ const AnnooucementBaner = () => {
      );
 }
  
-export default AnnooucementBaner ;
+export default AnnouncementBanner  ;
