@@ -1,9 +1,17 @@
+import Image from "next/image";
+
 const Navbar = () => {
   return ( 
       <nav className="bg-white border-gray-200 dark:bg-gray-900 dark:border-gray-700">
         <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
           <a href="#" className="flex items-center">
-              <img src="/logo.png" className="h-8 mr-3" alt="Flowbite Logo" />
+              <Image 
+                src={"/logo.png"}
+                height={32}
+                width={32}
+                className="h-8 mr-3" 
+                alt="Flowbite Logo"   
+              />
               <span className="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">Simply News</span>
           </a>
           <button data-collapse-toggle="navbar-dropdown" type="button" className="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600" aria-controls="navbar-dropdown" aria-expanded="false">

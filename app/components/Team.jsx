@@ -1,3 +1,5 @@
+import Image from "next/image";
+
 const Team = () => {
     return ( 
         <div className="max-w-[85rem] px-4 py-10 sm:px-6 lg:px-8 lg:py-14 mx-auto">
@@ -10,7 +12,7 @@ const Team = () => {
         {/* Team Members Grid*/ }
         <div className="grid grid-cols-2 md:grid-cols-3 gap-8 md:gap-12">
           <div className="text-center">
-            <img className="rounded-xl sm:w-48 sm:h-48 lg:w-60 lg:h-60 mx-auto" src="/team1.jpg" alt="Image Description"/>
+            <Image height={500} width={500} className="rounded-xl sm:w-48 sm:h-48 lg:w-60 lg:h-60 mx-auto" src="/team1.jpg" alt="Image Description"/>
             <div className="mt-2 sm:mt-4">
               <h3 className="text-sm font-medium text-gray-800 sm:text-base lg:text-lg dark:text-gray-200">
                 David Forren
@@ -23,7 +25,7 @@ const Team = () => {
           {/* End Col */ }
 
           <div className="text-center">
-            <img className="rounded-xl sm:w-48 sm:h-48 lg:w-60 lg:h-60 mx-auto" src="/team2.jpg" alt="Image Description"/>
+            <Image height={500} width={500} className="rounded-xl sm:w-48 sm:h-48 lg:w-60 lg:h-60 mx-auto" src="/team2.jpg" alt="Image Description"/>
             <div className="mt-2 sm:mt-4">
               <h3 className="text-sm font-medium text-gray-800 sm:text-base lg:text-lg dark:text-gray-200">
                 Amil Evara
@@ -36,7 +38,7 @@ const Team = () => {
           {/* End Col */ }
 
           <div className="text-center">
-            <img className="rounded-xl sm:w-48 sm:h-48 lg:w-60 lg:h-60 mx-auto" src="/team3.jpg" alt="Image Description"/>
+            <Image height={500} width={500} className="rounded-xl sm:w-48 sm:h-48 lg:w-60 lg:h-60 mx-auto" src="/team3.jpg" alt="Image Description"/>
             <div className="mt-2 sm:mt-4">
               <h3 className="text-sm font-medium text-gray-800 sm:text-base lg:text-lg dark:text-gray-200">
                 Ebele Egbuna
@@ -49,7 +51,7 @@ const Team = () => {
           {/* End Col */ }
 
           <div className="text-center">
-            <img className="rounded-xl sm:w-48 sm:h-48 lg:w-60 lg:h-60 mx-auto" src="/team4.jpg" alt="Image Description"/>
+            <Image height={500} width={500} className="rounded-xl sm:w-48 sm:h-48 lg:w-60 lg:h-60 mx-auto" src="/team4.jpg" alt="Image Description"/>
             <div className="mt-2 sm:mt-4">
               <h3 className="text-sm font-medium text-gray-800 sm:text-base lg:text-lg dark:text-gray-200">
                 Maria Powers
@@ -62,7 +64,7 @@ const Team = () => {
           {/* End Col */ }
 
           <div className="text-center">
-            <img className="rounded-xl sm:w-48 sm:h-48 lg:w-60 lg:h-60 mx-auto" src="/team5.jpg" alt="Image Description"/>
+            <Image height={500} width={500} className="rounded-xl sm:w-48 sm:h-48 lg:w-60 lg:h-60 mx-auto" src="/team5.jpg" alt="Image Description"/>
             <div className="mt-2 sm:mt-4">
               <h3 className="text-sm font-medium text-gray-800 sm:text-base lg:text-lg dark:text-gray-200">
                 Delia Pawelke
@@ -75,7 +77,7 @@ const Team = () => {
           {/* End Col */ }
 
           <div className="text-center">
-            <img className="rounded-xl sm:w-48 sm:h-48 lg:w-60 lg:h-60 mx-auto" src="/team6.jpg" alt="Image Description"/>
+            <Image height={500} width={500} className="rounded-xl sm:w-48 sm:h-48 lg:w-60 lg:h-60 mx-auto" src="/team6.jpg" alt="Image Description"/>
             <div className="mt-2 sm:mt-4">
               <h3 className="text-sm font-medium text-gray-800 sm:text-base lg:text-lg dark:text-gray-200">
                 Tom Lowry
@@ -88,7 +90,7 @@ const Team = () => {
           {/* End Col */ }
 
           <div className="text-center">
-            <img className="rounded-xl sm:w-48 sm:h-48 lg:w-60 lg:h-60 mx-auto" src="/team7.jpg" alt="Image Description"/>
+            <Image height={500} width={500} className="rounded-xl sm:w-48 sm:h-48 lg:w-60 lg:h-60 mx-auto" src="/team7.jpg" alt="Image Description"/>
             <div className="mt-2 sm:mt-4">
               <h3 className="text-sm font-medium text-gray-800 sm:text-base lg:text-lg dark:text-gray-200">
                 Louise Donadieu
@@ -101,7 +103,7 @@ const Team = () => {
           {/* End Col */ }
 
           <div className="text-center">
-            <img className="rounded-xl sm:w-48 sm:h-48 lg:w-60 lg:h-60 mx-auto" src="/team8.jpg" alt="Image Description"/>
+            <Image height={500} width={500} className="rounded-xl sm:w-48 sm:h-48 lg:w-60 lg:h-60 mx-auto" src="/team8.jpg" alt="Image Description"/>
             <div className="mt-2 sm:mt-4">
               <h3 className="text-sm font-medium text-gray-800 sm:text-base lg:text-lg dark:text-gray-200">
                 Jeff Fisher
@@ -114,7 +116,7 @@ const Team = () => {
           {/* End Col */ }
 
           <div className="text-center">
-            <img className="rounded-xl sm:w-48 sm:h-48 lg:w-60 lg:h-60 mx-auto" src="/team9.jpg" alt="Image Description"/>
+            <Image height={500} width={500} className="rounded-xl sm:w-48 sm:h-48 lg:w-60 lg:h-60 mx-auto" src="/team9.jpg" alt="Image Description"/>
             <div className="mt-2 sm:mt-4">
               <h3 className="text-sm font-medium text-gray-800 sm:text-base lg:text-lg dark:text-gray-200">
                 Sophia Harrington

@@ -1,3 +1,4 @@
+import Image from "next/image";
 const Stories = () => {
     return ( 
         <div className="max-w-[85rem] px-4 py-10 sm:px-6 lg:px-8 lg:py-14 mx-auto">
@@ -13,7 +14,13 @@ const Stories = () => {
           {/* Card */}
           <a className="group rounded-xl overflow-hidden" href="#">
             <div className="relative pt-[50%] sm:pt-[70%] rounded-xl overflow-hidden">
-              <img className="w-full h-full absolute top-0 left-0 object-cover group-hover:scale-105 transition-transform duration-500 ease-in-out rounded-xl" src="/4.png" alt="Image Description"/>
+              <Image 
+              className="w-full h-full absolute top-0 left-0 object-cover group-hover:scale-105 transition-transform duration-500 ease-in-out rounded-xl" 
+              src="/4.png" 
+              alt="Image Description"
+                height={500}
+                width={500}
+              />
               <span className="absolute top-0 right-0 rounded-tr-xl rounded-bl-xl text-xs font-medium bg-gray-800 text-white py-1.5 px-3 dark:bg-gray-900">
                 Sports
               </span>
@@ -39,7 +46,8 @@ const Stories = () => {
           {/* Card */}
           <a className="group rounded-xl overflow-hidden" href="#">
             <div className="relative pt-[50%] sm:pt-[70%] rounded-xl overflow-hidden">
-              <img className="w-full h-full absolute top-0 left-0 object-cover group-hover:scale-105 transition-transform duration-500 ease-in-out rounded-xl" src="/palliative.jpg" alt="Image Description"/>
+              <Image height={500}
+                width={500} className="w-full h-full absolute top-0 left-0 object-cover group-hover:scale-105 transition-transform duration-500 ease-in-out rounded-xl" src="/palliative.jpg" alt="Image Description"/>
               <span className="absolute top-0 right-0 rounded-tr-xl rounded-bl-xl text-xs font-medium bg-gray-800 text-white py-1.5 px-3 dark:bg-gray-900">
                 Sponsored
               </span>
@@ -65,7 +73,8 @@ const Stories = () => {
           {/* Card */}
           <a className="group rounded-xl overflow-hidden" href="#">
             <div className="relative pt-[50%] sm:pt-[70%] rounded-xl overflow-hidden">
-              <img className="w-full h-full absolute top-0 left-0 object-cover group-hover:scale-105 transition-transform duration-500 ease-in-out rounded-xl" src="/malemia.jpg" alt="Image Description"/>
+              <Image height={500}
+                width={500} className="w-full h-full absolute top-0 left-0 object-cover group-hover:scale-105 transition-transform duration-500 ease-in-out rounded-xl" src="/malemia.jpg" alt="Image Description"/>
               <span className="absolute top-0 right-0 rounded-tr-xl rounded-bl-xl text-xs font-medium bg-gray-800 text-white py-1.5 px-3 dark:bg-gray-900">
                 Sponsored
               </span>
@@ -91,7 +100,8 @@ const Stories = () => {
           {/* Card */}
           <a className="group rounded-xl overflow-hidden" href="#">
             <div className="relative pt-[50%] sm:pt-[70%] rounded-xl overflow-hidden">
-              <img className="w-full h-full absolute top-0 left-0 object-cover group-hover:scale-105 transition-transform duration-500 ease-in-out rounded-xl" src="/khuda.webp" alt="Image Description"/>
+              <Image height={500}
+                width={500} className="w-full h-full absolute top-0 left-0 object-cover group-hover:scale-105 transition-transform duration-500 ease-in-out rounded-xl" src="/khuda.webp" alt="Image Description"/>
               <span className="absolute top-0 right-0 rounded-tr-xl rounded-bl-xl text-xs font-medium bg-gray-800 text-white py-1.5 px-3 dark:bg-gray-900">
                 Sports
               </span>
@@ -117,7 +127,8 @@ const Stories = () => {
           {/* Card */}
           <a className="group rounded-xl overflow-hidden" href="#">
             <div className="relative pt-[50%] sm:pt-[70%] rounded-xl overflow-hidden">
-              <img className="w-full h-full absolute top-0 left-0 object-cover group-hover:scale-105 transition-transform 
+              <Image height={500}
+                width={500} className="w-full h-full absolute top-0 left-0 object-cover group-hover:scale-105 transition-transform 
               duration-500 ease-in-out rounded-xl" src="/2.png" alt="Image Description"/>
             </div>
 

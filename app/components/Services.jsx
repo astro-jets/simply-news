@@ -1,3 +1,5 @@
+import Image from "next/image";
+
 const Services = () => {
     return ( 
         <div className="max-w-[85rem] px-4 py-10 sm:px-6 lg:px-8 lg:py-14 mx-auto">
@@ -57,15 +59,28 @@ const Services = () => {
                 {/* Tab Content  */}
                 <div>
                   <div id="tabs-with-card-1" role="tabpanel" aria-labelledby="tabs-with-card-item-1">
-                    <img className="shadow-xl shadow-gray-200 rounded-xl dark:shadow-gray-900/[.2]" src='/bg.jpg' alt="Image Description"/>
+                    <Image 
+                    className="shadow-xl shadow-gray-200 rounded-xl dark:shadow-gray-900/[.2]" 
+                    src='/bg.jpg' 
+                    height={500}
+                    width={500}
+                    alt="Image Description"/>
                   </div>
 
                   <div id="tabs-with-card-2" className="hidden" role="tabpanel" aria-labelledby="tabs-with-card-item-2">
-                    <img className="shadow-xl shadow-gray-200 rounded-xl dark:shadow-gray-900/[.2]" src="/1665686306574-1ace09918530?ixlib=rb-4.0.3&ixid=MnwxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=987&h=1220&q=80" alt="Image Description"/>
+                    <Image 
+                    height={500}
+                    width={500}
+                    className="shadow-xl shadow-gray-200 rounded-xl dark:shadow-gray-900/[.2]" 
+                    src="/1665686306574-1ace09918530?ixlib=rb-4.0.3&ixid=MnwxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=987&h=1220&q=80" 
+                    alt="Image Description"/>
                   </div>
 
                   <div id="tabs-with-card-3" className="hidden" role="tabpanel" aria-labelledby="tabs-with-card-item-3">
-                    <img className="shadow-xl shadow-gray-200 rounded-xl dark:shadow-gray-900/[.2]" src="/team1.jpg" alt="Image Description"/>
+                    <Image 
+                    height={500}
+                    width={500}
+                    className="shadow-xl shadow-gray-200 rounded-xl dark:shadow-gray-900/[.2]" src="/team1.jpg" alt="Image Description"/>
                   </div>
                 </div>
                 {/* End Tab Content  */}
