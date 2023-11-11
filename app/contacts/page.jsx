@@ -4,7 +4,7 @@ import ContactForm from "../components/ContactForm";
 
 
 const contacts = () => {
-  useEffect(() => {import('preline')}, []);
+  useEffect(() => {import('preline')}, [])
 
   return ( 
       <>
