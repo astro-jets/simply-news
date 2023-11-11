@@ -3,7 +3,7 @@ import { useEffect } from "react";
 import ContactForm from "../components/ContactForm";
 
 
-const contacts = () => {
+const Contacts = () => {
   useEffect(() => {import('preline')}, [])
 
   return ( 
@@ -142,4 +142,4 @@ const contacts = () => {
   );
 }
  
-export default contacts;
+export default Contacts;
