@@ -44,10 +44,10 @@ const DeleteModal = () => {
           We are using cookies to improve your experience!
         </h2>
         <p className="mt-2 text-sm text-gray-600 dark:text-gray-400">
-          By clicking "Allow all", you agree to use of all cookies. Visit our <a className="inline-flex items-center gap-x-1.5 text-blue-600 decoration-2 hover:underline font-medium" href="#">Cookies Policy</a> to learn more.
+          By clicking "Allow all", you agree to use of all cookies. Visit our <a className="inline-flex items-center gap-x-1.5 text-red-600 decoration-2 hover:underline font-medium" href="#">Cookies Policy</a> to learn more.
         </p>
         <div className="mt-5 inline-flex gap-x-2">
-          <button type="button" className="py-2 px-3 inline-flex items-center gap-x-2 text-sm font-semibold rounded-lg border border-transparent bg-blue-600 text-white hover:bg-blue-700 disabled:opacity-50 disabled:pointer-events-none dark:focus:outline-none dark:focus:ring-1 dark:focus:ring-gray-600">
+          <button type="button" className="py-2 px-3 inline-flex items-center gap-x-2 text-sm font-semibold rounded-lg border border-transparent bg-red-600 text-white hover:bg-red-700 disabled:opacity-50 disabled:pointer-events-none dark:focus:outline-none dark:focus:ring-1 dark:focus:ring-gray-600">
             Allow all
           </button>
           <button type="button" className="py-2 px-3 inline-flex items-center gap-x-2 text-sm font-medium rounded-lg border border-gray-200 bg-white text-gray-800 shadow-sm hover:bg-gray-50 disabled:opacity-50 disabled:pointer-events-none dark:bg-slate-900 dark:border-gray-700 dark:text-white dark:hover:bg-gray-800 dark:focus:outline-none dark:focus:ring-1 dark:focus:ring-gray-600">

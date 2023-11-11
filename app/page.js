@@ -1,5 +1,7 @@
+"use client";
+
 // Plug Ins
-require ('preline/plugin');
+import('preline');
 
 // Components
 import Hero from './components/Hero';
