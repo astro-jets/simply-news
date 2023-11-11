@@ -1,4 +1,5 @@
 import Image from "next/image";
+import('preline')
 const Stories = ({categories}) => {
     return ( 
       <div className="max-w-[85rem] px-4 py-10 sm:px-6 lg:px-8 lg:py-14 mx-auto">
@@ -9,9 +10,36 @@ const Stories = ({categories}) => {
         </div>
         {/* End Title */}
         {categories && 
-          <div className="w-full h-12 my-8 rounded-lg bg-red-700 text-white flex justify-center items-center space-x-6">
-              <p className="text-bold">Cateogries</p>
+          <div className="w-full h-12 hs-dropdown mb-8">
+            <button id="dropdownInformationButton" data-dropdown-toggle="dropdownInformation" className="
+            text-white bg-red-700 hover:bg-red-800 focus:ring-4 focus:outline-none w-full 
+            focus:ring-red-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center inline-flex items-center justify-between 
+            dark:bg-red-600 dark:hover:bg-red-700 dark:focus:ring-red-800" type="button">Categories <svg className="w-2.5 h-2.5 ms-3" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
+            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 1 4 4 4-4"/>
+            </svg>
+            </button>
+            <div id="dropdownInformation" className="hs-dropdown-menu transition-[opacity,margin] duration-[0.1ms] sm:duration-[150ms] hs-dropdown-open:opacity-100 opacity-0 z-10 hidden bg-white divide-y divide-gray-100 rounded-lg shadow w-11/12 dark:bg-red-700 dark:divide-black-600">
+                <div className="px-4 py-3 text-sm text-gray-900 dark:text-white">
+                  <div>Bonnie Green</div>
+                  <div className="font-medium truncate">name@flowbite.com</div>
+                </div>
+                <ul className="py-2 text-sm text-gray-700 dark:text-gray-200" aria-labelledby="dropdownInformationButton">
+                  <li>
+                    <a href="#" className="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Dashboard</a>
+                  </li>
+                  <li>
+                    <a href="#" className="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Settings</a>
+                  </li>
+                  <li>
+                    <a href="#" className="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Earnings</a>
+                  </li>
+                </ul>
+                <div className="py-2">
+                  <a href="#" className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 dark:hover:bg-gray-600 dark:text-gray-200 dark:hover:text-white">Sign out</a>
+                </div>
+            </div>
           </div>
+
         }
 
         {/* Grid */}
