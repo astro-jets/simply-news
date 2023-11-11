@@ -3,11 +3,11 @@ import { useEffect } from "react";
 
 import Stories from "../components/Stories";
 
-const news = () => {
+const News = () => {
     useEffect(() => {import('preline')}, []);
     return (             
         <Stories categories={true}/>
      );
 }
  
-export default news;
+export default News;
