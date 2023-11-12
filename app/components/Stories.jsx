@@ -18,7 +18,7 @@ const Stories = ({categories}) => {
             <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 1 4 4 4-4"/>
             </svg>
             </button>
-            <div id="dropdownInformation" className="hs-dropdown-menu transition-[opacity,margin] duration-[0.1ms] sm:duration-[150ms] hs-dropdown-open:opacity-100 opacity-0 z-10 hidden bg-white divide-y divide-gray-100 rounded-lg shadow w-11/12 dark:bg-red-700 dark:divide-black-600">
+            <div id="dropdownInformation" className="hs-dropdown-menu transition-[opacity,margin] duration-[0.1ms] sm:duration-[150ms] hs-dropdown-open:opacity-100 opacity-0 z-10 hidden bg-white divide-y divide-gray-100 rounded-lg shadow w-11/12m  dark:bg-red-700 dark:divide-black-600">
                 <div className="px-4 py-3 text-sm text-gray-900 dark:text-white">
                   <div>Bonnie Green</div>
                   <div className="font-medium truncate">name@flowbite.com</div>

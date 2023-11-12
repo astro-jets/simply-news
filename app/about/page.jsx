@@ -36,8 +36,8 @@ const about = () => {
                             We are providing a better facility
                         </h2>
                         <p className="mb-4 text-base leading-7 text-gray-500 dark:text-gray-400">
-                            At Cooperate News Africa, our mission is to serve as a leading source of insightful and unbiased media content that empowers and connects individuals across the African continent. Committed to journalistic excellence, we aim to provide timely, credible news coverage that showcases the diversity of Africa's stories, achievements, and challenges.
-                            Driven by a vision of positive transformation, we pledge to uphold the highest standards of ethics, fostering a sense of community and understanding. Cooperate News Africa seeks to be the trusted bridge connecting people, ideas, and opportunities, contributing to a narrative that reflects the dynamic and vibrant spirit of Africa.
+                            At Coporate News Africa, our mission is to serve as a leading source of insightful and unbiased media content that empowers and connects individuals across the African continent. Committed to journalistic excellence, we aim to provide timely, credible news coverage that showcases the diversity of Africa's stories, achievements, and challenges.
+                            Driven by a vision of positive transformation, we pledge to uphold the highest standards of ethics, fostering a sense of community and understanding. Coporate News Africa seeks to be the trusted bridge connecting people, ideas, and opportunities, contributing to a narrative that reflects the dynamic and vibrant spirit of Africa.
                         </p>
                     </div>
                 </div>
@@ -89,10 +89,10 @@ const about = () => {
                                 </svg>
                                 <div className="flex-1">
                                     <span className="font-bold dark:text-white">
-                                        What is Cooperate News Africa's mission and vision?
+                                        What is Coporate News Africa's mission and vision?
                                     </span>
                                     <div className="mt-3 text-sm text-gray-500 dark:text-gray-400 answer">
-                                        Answer: Cooperate News Africa is dedicated to being a leading source of insightful and unbiased media content, with a mission to empower and connect individuals across the African continent. Our vision is to contribute to a positive transformation by showcasing the diversity of Africa's stories, achievements, and challenges.
+                                        Answer: Coporate News Africa is dedicated to being a leading source of insightful and unbiased media content, with a mission to empower and connect individuals across the African continent. Our vision is to contribute to a positive transformation by showcasing the diversity of Africa's stories, achievements, and challenges.
                                     </div>
                                 </div>
                             </div>
@@ -104,10 +104,10 @@ const about = () => {
                                 </svg>
                                 <div className="flex-1">
                                     <span className="font-bold dark:text-white">
-                                        How does Cooperate News Africa differentiate itself from other media outlets?
+                                        How does Coporate News Africa differentiate itself from other media outlets?
                                     </span>
                                     <div className="mt-3 text-sm text-gray-500 dark:text-gray-400 answer">
-                                        Answer: We stand out through our commitment to journalistic excellence, transparency, and inclusivity. Cooperate News Africa aims to provide timely and credible news coverage, prioritizing the voices and narratives that reflect the dynamic and vibrant spirit of Africa.
+                                        Answer: We stand out through our commitment to journalistic excellence, transparency, and inclusivity. Coporate News Africa aims to provide timely and credible news coverage, prioritizing the voices and narratives that reflect the dynamic and vibrant spirit of Africa.
                                     </div>
                                 </div>
                             </div>
@@ -119,10 +119,10 @@ const about = () => {
                                 </svg>
                                 <div className="flex-1">
                                     <span className="font-bold dark:text-white">
-                                        Who are the key figures or contributors behind Cooperate News Africa's content?
+                                        Who are the key figures or contributors behind Coporate News Africa's content?
                                     </span>
                                     <div className="mt-3 text-sm text-gray-500 dark:text-gray-400 answer">
-                                        Answer: Our content is crafted by a team of experienced journalists, contributors, and thought leaders passionate about Africa. Visit our "Meet the Team" page to learn more about the individuals shaping the narrative at Cooperate News Africa.
+                                        Answer: Our content is crafted by a team of experienced journalists, contributors, and thought leaders passionate about Africa. Visit our "Meet the Team" page to learn more about the individuals shaping the narrative at Coporate News Africa.
                                     </div>
                                 </div>
                             </div>
@@ -134,10 +134,10 @@ const about = () => {
                                 </svg>
                                 <div className="flex-1">
                                     <span className="font-bold dark:text-white">
-                                        What regions and topics does Cooperate News Africa primarily cover?
+                                        What regions and topics does Coporate News Africa primarily cover?
                                     </span>
                                     <div className="mt-3 text-sm text-gray-500 dark:text-gray-400 answer">
-                                        Answer: Cooperate News Africa covers a wide spectrum of topics across the African continent, from politics and economics to culture and innovation. We strive to provide comprehensive coverage, ensuring a holistic representation of the diverse regions and stories within Africa.
+                                        Answer: Corporate News Africa covers a wide spectrum of topics across the African continent, from economics, mining, and energy to culture and innovation. We strive to provide comprehensive coverage, ensuring a holistic representation of the diverse regions and stories within Africa.
                                     </div>
                                 </div>
                             </div>
@@ -155,10 +155,10 @@ const about = () => {
                                 </svg>
                                 <div className="flex-1">
                                     <span className="font-bold dark:text-white">
-                                        How does Cooperate News Africa ensure the accuracy and credibility of its news coverage?
+                                        How does Coporate News Africa ensure the accuracy and credibility of its news coverage?
                                     </span>
                                     <div className="mt-3 text-sm text-gray-500 dark:text-gray-400 answer">
-                                        Answer: We uphold the highest standards of journalistic integrity. Our editorial process involves thorough fact-checking, verification, and adherence to ethical guidelines. Cooperate News Africa is committed to delivering accurate and credible news to our readers.
+                                        Answer: We uphold the highest standards of journalistic integrity. Our editorial process involves thorough fact-checking, verification, and adherence to ethical guidelines. Coporate News Africa is committed to delivering accurate and credible news to our readers.
 
 
                                     </div>
@@ -187,10 +187,10 @@ const about = () => {
                                 </svg>
                                 <div className="flex-1">
                                     <span className="font-bold dark:text-white">
-                                        Does Cooperate News Africa focus on any specific industry or sector in its reporting?
+                                        Does Coporate News Africa focus on any specific industry or sector in its reporting?
                                     </span>
                                     <div className="mt-3 text-sm text-gray-500 dark:text-gray-400 answer">
-                                        Answer: While we cover a broad range of topics, Cooperate News Africa doesn't limit its focus to a specific industry or sector. Our goal is to provide a comprehensive view of the continent, spanning politics, economics, culture, and more.
+                                        Answer: While we cover a broad range of topics, Coporate News Africa doesn't limit its focus to a specific industry or sector. Our goal is to provide a comprehensive view of the continent, spanning politics, economics, culture, and more.
                                     </div>
                                 </div>
                             </div>
@@ -202,7 +202,7 @@ const about = () => {
                                 </svg>
                                 <div className="flex-1">
                                     <span className="font-bold dark:text-white">
-                                        How can readers contribute or submit story ideas to Cooperate News Africa?
+                                        How can readers contribute or submit story ideas to Coporate News Africa?
                                     </span>
                                     <div className="mt-3 text-sm text-gray-500 dark:text-gray-400 answer">
                                         Answer: We welcome reader contributions and story ideas. Please visit our "Contact Us" page for information on how to submit your ideas or get in touch with our editorial team.
@@ -221,10 +221,10 @@ const about = () => {
                                 </svg>
                                 <div className="flex-1">
                                     <span className="font-bold dark:text-white">
-                                        What platforms and formats does Cooperate News Africa utilize to deliver its content?
+                                        What platforms and formats does Coporate News Africa utilize to deliver its content?
                                     </span>
                                     <div className="mt-3 text-sm text-gray-500 dark:text-gray-400 answer">
-                                        Answer: Cooperate News Africa delivers content through its website, social media platforms, and newsletters. We offer a variety of formats, including articles, videos, and interactive content to cater to diverse audience preferences.
+                                        Answer: Coporate News Africa delivers content through its website, social media platforms, and newsletters. We offer a variety of formats, including articles, videos, and interactive content to cater to diverse audience preferences.
                                     </div>
                                 </div>
                             </div>
@@ -236,7 +236,7 @@ const about = () => {
                                 </svg>
                                 <div className="flex-1">
                                     <span className="font-bold dark:text-white">
-                                        Is there a subscription model, and how can readers support Cooperate News Africa financially?
+                                        Is there a subscription model, and how can readers support Coporate News Africa financially?
                                     </span>
                                     <div className="mt-3 text-sm text-gray-500 dark:text-gray-400 answer">
                                         Answer: Yes, we offer subscription plans to support our continued commitment to quality journalism. You can find information on subscription options on our "Support Us" page.
@@ -251,7 +251,7 @@ const about = () => {
                                 </svg>
                                 <div className="flex-1">
                                     <span className="font-bold dark:text-white">
-                                        How can users engage with Cooperate News Africa through social media?
+                                        How can users engage with Coporate News Africa through social media?
                                     </span>
                                     <div className="mt-3 text-sm text-gray-500 dark:text-gray-400 answer">
                                         Answer: Connect with us on social media platforms such as Twitter, Facebook, and Instagram. We encourage our readers to share, comment, and engage with our content to be part of the conversation.
@@ -269,7 +269,7 @@ const about = () => {
                                         Are there plans for regional expansion or additional language offerings in the future?
                                     </span>
                                     <div className="mt-3 text-sm text-gray-500 dark:text-gray-400 answer">
-                                        Answer: Cooperate News Africa is continually exploring opportunities for expansion. Stay tuned for updates on regional coverage and additional language offerings as we work towards making our content more accessible to a broader audience.
+                                        Answer: Coporate News Africa is continually exploring opportunities for expansion. Stay tuned for updates on regional coverage and additional language offerings as we work towards making our content more accessible to a broader audience.
                                     </div>
                                 </div>
                             </div>
