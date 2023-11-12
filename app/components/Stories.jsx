@@ -25,17 +25,17 @@ const Stories = ({categories}) => {
                 </div>
                 <ul className="py-2 text-sm text-gray-700 dark:text-gray-200" aria-labelledby="dropdownInformationButton">
                   <li>
-                    <a href="#" className="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Dashboard</a>
+                    <a href="/news/12345" className="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Dashboard</a>
                   </li>
                   <li>
-                    <a href="#" className="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Settings</a>
+                    <a href="/news/12345" className="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Settings</a>
                   </li>
                   <li>
-                    <a href="#" className="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Earnings</a>
+                    <a href="/news/12345" className="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Earnings</a>
                   </li>
                 </ul>
                 <div className="py-2">
-                  <a href="#" className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 dark:hover:bg-gray-600 dark:text-gray-200 dark:hover:text-white">Sign out</a>
+                  <a href="/news/12345" className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 dark:hover:bg-gray-600 dark:text-gray-200 dark:hover:text-white">Sign out</a>
                 </div>
             </div>
           </div>
@@ -45,7 +45,7 @@ const Stories = ({categories}) => {
         {/* Grid */}
         <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
           {/* Card */}
-          <a className="group rounded-xl overflow-hidden" href="#">
+          <a className="group rounded-xl overflow-hidden" href="/news/12345">
             <div className="relative pt-[50%] sm:pt-[70%] rounded-xl overflow-hidden">
               <Image 
               className="w-full h-full absolute top-0 left-0 object-cover group-hover:scale-105 transition-transform duration-500 ease-in-out rounded-xl" 
@@ -77,7 +77,7 @@ const Stories = ({categories}) => {
           {/* End Card */}
 
           {/* Card */}
-          <a className="group rounded-xl overflow-hidden" href="#">
+          <a className="group rounded-xl overflow-hidden" href="/news/12345">
             <div className="relative pt-[50%] sm:pt-[70%] rounded-xl overflow-hidden">
               <Image height={500}
                 width={500} className="w-full h-full absolute top-0 left-0 object-cover group-hover:scale-105 transition-transform duration-500 ease-in-out rounded-xl" src="/palliative.jpg" alt="Image Description"/>
@@ -104,7 +104,7 @@ const Stories = ({categories}) => {
           {/* End Card */}
 
           {/* Card */}
-          <a className="group rounded-xl overflow-hidden" href="#">
+          <a className="group rounded-xl overflow-hidden" href="/news/12345">
             <div className="relative pt-[50%] sm:pt-[70%] rounded-xl overflow-hidden">
               <Image height={500}
                 width={500} className="w-full h-full absolute top-0 left-0 object-cover group-hover:scale-105 transition-transform duration-500 ease-in-out rounded-xl" src="/malemia.jpg" alt="Image Description"/>
@@ -131,7 +131,7 @@ const Stories = ({categories}) => {
           {/* End Card */}
 
           {/* Card */}
-          <a className="group rounded-xl overflow-hidden" href="#">
+          <a className="group rounded-xl overflow-hidden" href="/news/12345">
             <div className="relative pt-[50%] sm:pt-[70%] rounded-xl overflow-hidden">
               <Image height={500}
                 width={500} className="w-full h-full absolute top-0 left-0 object-cover group-hover:scale-105 transition-transform duration-500 ease-in-out rounded-xl" src="/khuda.webp" alt="Image Description"/>
@@ -158,7 +158,7 @@ const Stories = ({categories}) => {
           {/* End Card */}
 
           {/* Card */}
-          <a className="group rounded-xl overflow-hidden" href="#">
+          <a className="group rounded-xl overflow-hidden" href="/news/12345">
             <div className="relative pt-[50%] sm:pt-[70%] rounded-xl overflow-hidden">
               <Image height={500}
                 width={500} className="w-full h-full absolute top-0 left-0 object-cover group-hover:scale-105 transition-transform 
@@ -183,7 +183,7 @@ const Stories = ({categories}) => {
           {/* End Card */}
 
           {/* Card */}
-          <a className="group relative flex flex-col w-full min-h-[15rem] bg-center bg-cover rounded-xl hover:shadow-lg transition bg-[url('/curved2.jpg')]" href="#">
+          <a className="group relative flex flex-col w-full min-h-[15rem] bg-center bg-cover rounded-xl hover:shadow-lg transition bg-[url('/curved2.jpg')]" href="/news/12345">
             <div className="w-full h-full bg-[#00000094] group relative flex flex-col">
               <div className="flex-auto p-4 md:p-6">
                 <h3 className="text-xl text-white/[.9] group-hover:text-white">

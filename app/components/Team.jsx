@@ -12,10 +12,10 @@ const Team = () => {
         {/* Team Members Grid*/ }
         <div className="grid grid-cols-2 md:grid-cols-3 gap-8 md:gap-12">
           <div className="text-center">
-            <Image height={500} width={500} className="rounded-xl sm:w-48 sm:h-48 lg:w-60 lg:h-60 mx-auto" src="/team1.jpg" alt="Image Description"/>
+            <Image height={500} width={500} className="rounded-xl sm:w-48 sm:h-48 lg:w-60 lg:h-60 mx-auto" src="/bester.jpg" alt="Image Description"/>
             <div className="mt-2 sm:mt-4">
               <h3 className="text-sm font-medium text-gray-800 sm:text-base lg:text-lg dark:text-gray-200">
-                David Forren
+                Bester Kayaye
               </h3>
               <p className="text-xs text-gray-600 sm:text-sm lg:text-base dark:text-gray-400">
                 Founder / CEO
@@ -25,104 +25,53 @@ const Team = () => {
           {/* End Col */ }
 
           <div className="text-center">
-            <Image height={500} width={500} className="rounded-xl sm:w-48 sm:h-48 lg:w-60 lg:h-60 mx-auto" src="/team2.jpg" alt="Image Description"/>
+            <Image height={500} width={500} className="rounded-xl sm:w-48 sm:h-48 lg:w-60 lg:h-60 mx-auto" src="/alex.jpg" alt="Image Description"/>
             <div className="mt-2 sm:mt-4">
               <h3 className="text-sm font-medium text-gray-800 sm:text-base lg:text-lg dark:text-gray-200">
-                Amil Evara
+                Alex Charlie
               </h3>
               <p className="text-xs text-gray-600 sm:text-sm lg:text-base dark:text-gray-400">
-                UI/UX Designer
+                News Director
               </p>
             </div>
           </div>
           {/* End Col */ }
 
           <div className="text-center">
-            <Image height={500} width={500} className="rounded-xl sm:w-48 sm:h-48 lg:w-60 lg:h-60 mx-auto" src="/team3.jpg" alt="Image Description"/>
+            <Image height={500} width={500} className="rounded-xl sm:w-48 sm:h-48 lg:w-60 lg:h-60 mx-auto" src="/chikondi.jpeg" alt="Image Description"/>
             <div className="mt-2 sm:mt-4">
               <h3 className="text-sm font-medium text-gray-800 sm:text-base lg:text-lg dark:text-gray-200">
-                Ebele Egbuna
+                Chikondi Galeta
               </h3>
               <p className="text-xs text-gray-600 sm:text-sm lg:text-base dark:text-gray-400">
-                Support Consultant
+                Head of Marketing
+              </p>
+            </div>
+          </div>
+          {/* End Col */ }
+
+          
+          <div className="text-center">
+            <Image height={500} width={500} className="rounded-xl sm:w-48 sm:h-48 lg:w-60 lg:h-60 mx-auto" src="/tamara.jpeg" alt="Image Description"/>
+            <div className="mt-2 sm:mt-4">
+              <h3 className="text-sm font-medium text-gray-800 sm:text-base lg:text-lg dark:text-gray-200">
+                Tamara Zingale
+              </h3>
+              <p className="text-xs text-gray-600 sm:text-sm lg:text-base dark:text-gray-400">
+                Accountant
               </p>
             </div>
           </div>
           {/* End Col */ }
 
           <div className="text-center">
-            <Image height={500} width={500} className="rounded-xl sm:w-48 sm:h-48 lg:w-60 lg:h-60 mx-auto" src="/team4.jpg" alt="Image Description"/>
+            <Image height={500} width={500} className="rounded-xl sm:w-48 sm:h-48 lg:w-60 lg:h-60 mx-auto" src="/kelvin.jpg" alt="Image Description"/>
             <div className="mt-2 sm:mt-4">
               <h3 className="text-sm font-medium text-gray-800 sm:text-base lg:text-lg dark:text-gray-200">
-                Maria Powers
+                Kelvin Bapu
               </h3>
               <p className="text-xs text-gray-600 sm:text-sm lg:text-base dark:text-gray-400">
-                Director of sales
-              </p>
-            </div>
-          </div>
-          {/* End Col */ }
-
-          <div className="text-center">
-            <Image height={500} width={500} className="rounded-xl sm:w-48 sm:h-48 lg:w-60 lg:h-60 mx-auto" src="/team5.jpg" alt="Image Description"/>
-            <div className="mt-2 sm:mt-4">
-              <h3 className="text-sm font-medium text-gray-800 sm:text-base lg:text-lg dark:text-gray-200">
-                Delia Pawelke
-              </h3>
-              <p className="text-xs text-gray-600 sm:text-sm lg:text-base dark:text-gray-400">
-                Front-end Developer
-              </p>
-            </div>
-          </div>
-          {/* End Col */ }
-
-          <div className="text-center">
-            <Image height={500} width={500} className="rounded-xl sm:w-48 sm:h-48 lg:w-60 lg:h-60 mx-auto" src="/team6.jpg" alt="Image Description"/>
-            <div className="mt-2 sm:mt-4">
-              <h3 className="text-sm font-medium text-gray-800 sm:text-base lg:text-lg dark:text-gray-200">
-                Tom Lowry
-              </h3>
-              <p className="text-xs text-gray-600 sm:text-sm lg:text-base dark:text-gray-400">
-                UI/UX Designer
-              </p>
-            </div>
-          </div>
-          {/* End Col */ }
-
-          <div className="text-center">
-            <Image height={500} width={500} className="rounded-xl sm:w-48 sm:h-48 lg:w-60 lg:h-60 mx-auto" src="/team7.jpg" alt="Image Description"/>
-            <div className="mt-2 sm:mt-4">
-              <h3 className="text-sm font-medium text-gray-800 sm:text-base lg:text-lg dark:text-gray-200">
-                Louise Donadieu
-              </h3>
-              <p className="text-xs text-gray-600 sm:text-sm lg:text-base dark:text-gray-400">
-                Support Consultant
-              </p>
-            </div>
-          </div>
-          {/* End Col */ }
-
-          <div className="text-center">
-            <Image height={500} width={500} className="rounded-xl sm:w-48 sm:h-48 lg:w-60 lg:h-60 mx-auto" src="/team8.jpg" alt="Image Description"/>
-            <div className="mt-2 sm:mt-4">
-              <h3 className="text-sm font-medium text-gray-800 sm:text-base lg:text-lg dark:text-gray-200">
-                Jeff Fisher
-              </h3>
-              <p className="text-xs text-gray-600 sm:text-sm lg:text-base dark:text-gray-400">
-                Project Manager
-              </p>
-            </div>
-          </div>
-          {/* End Col */ }
-
-          <div className="text-center">
-            <Image height={500} width={500} className="rounded-xl sm:w-48 sm:h-48 lg:w-60 lg:h-60 mx-auto" src="/team9.jpg" alt="Image Description"/>
-            <div className="mt-2 sm:mt-4">
-              <h3 className="text-sm font-medium text-gray-800 sm:text-base lg:text-lg dark:text-gray-200">
-                Sophia Harrington
-              </h3>
-              <p className="text-xs text-gray-600 sm:text-sm lg:text-base dark:text-gray-400">
-                Project Manager
+                I.T Support
               </p>
             </div>
           </div>

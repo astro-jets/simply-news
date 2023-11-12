@@ -12,11 +12,11 @@ const BlogPost = () => {
         {/* Author information */}
         <div className="mb-4 flex items-center">
           <Image
-            src="/team9.jpg"
+            src="/bester.jpg"
             alt="Author Avatar"
-            width={48}
-            height={48}
-            className="rounded-full mr-4"
+            width={60}
+            height={60}
+            className="rounded-full h-[60px] mr-4 border-red-700 border-[2px]"
           />
           <div>
             <h1 className="text-red-800 font-semibold">Bester Kayaye</h1>
