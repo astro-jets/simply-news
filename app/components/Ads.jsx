@@ -5,34 +5,22 @@ const Ads = () => {
                 <div className="hs-carousel-body absolute top-0 bottom-0 start-0 flex flex-nowrap transition-transform duration-700 opacity-0">
                     <div className="hs-carousel-slide">
                         <div className="h-full relative">
-                        <img src="/4.png" alt="" className="w-full h-full object-cover" />
-                        <span className="bottom-4 absolute text-center bg-[#111111b2] text-2xl md:text-4xl w-full h-12 transition duration-700 text-white">
-                            Bullets win it again.
-                        </span>
+                        <img src="/kfc.png" alt="" className="w-full h-full object-cover" />
                         </div>
                     </div>
                     <div className="hs-carousel-slide">
                         <div className="h-full relative">
-                        <img src="/palliative.jpg" alt="" className="w-full h-full object-cover" />
-                        <span className="bottom-4 absolute text-center bg-[#111111b2] text-2xl md:text-4xl w-full h-12 transition duration-700 text-white">
-                            New hope for Palliative Care.
-                        </span>
+                        <img src="/escom.jpg" alt="" className="w-full h-full object-cover" />
                         </div>
                     </div>
                     <div className="hs-carousel-slide">
                         <div className="h-full relative">
-                        <img src="/malemia.jpg" alt="" className="w-full h-full object-cover" />
-                        <span className="bottom-4 absolute text-center bg-[#111111b2] text-2xl md:text-4xl w-full h-12 transition duration-700 text-white">
-                            Youth doing it Big.
-                        </span>
+                        <img src="/ad.png" alt="" className="w-full h-full object-cover" />
                         </div>
                     </div>
                     <div className="hs-carousel-slide">
                         <div className="h-full relative">
                         <img src="/malemia.jpg" alt="" className="w-full h-full object-cover" />
-                        <span className="bottom-4 absolute text-center bg-[#111111b2] text-2xl md:text-4xl w-full h-12 transition duration-700 text-white">
-                            Youth doing it Big.
-                        </span>
                         </div>
                     </div>
                 </div>

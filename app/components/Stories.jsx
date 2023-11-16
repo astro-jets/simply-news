@@ -118,8 +118,7 @@ const Stories = ({categories}) => {
           {/* Card */}
           <a className="group rounded-xl overflow-hidden" href="/news/12345">
             <div className="relative pt-[50%] sm:pt-[70%] rounded-xl overflow-hidden">
-              <Image height={500}
-                width={500} className="w-full h-full absolute top-0 left-0 object-cover group-hover:scale-105 transition-transform duration-500 ease-in-out rounded-xl" src="/malemia.jpg" alt="Image Description"/>
+              <Image height={500} width={500} className="w-full h-full absolute top-0 left-0 object-cover group-hover:scale-105 transition-transform duration-500 ease-in-out rounded-xl" src="/malemia.jpg" alt="Image Description"/>
               <span className="absolute top-0 right-0 rounded-tr-xl rounded-bl-xl text-xs font-medium bg-gray-800 text-white py-1.5 px-3 dark:bg-gray-900">
                 Sponsored
               </span>
