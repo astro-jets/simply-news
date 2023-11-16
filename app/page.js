@@ -1,7 +1,5 @@
 'use client'
 import { useEffect } from "react";
-import React from 'react';
-import('preline');
 
 // Components
 import Stories from './components/Stories';
@@ -10,7 +8,10 @@ import ContactForm from './components/ContactForm';
 import Slider from './components/Slider';
 
 export default function Home() {
-  useEffect(()=>{import('@preline/carousel');},[]);
+  useEffect(()=>{  
+    import('preline');
+    import('@preline/carousel');
+  },[]);
   return (
     <>
       <Slider/>

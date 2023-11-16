@@ -1,5 +1,6 @@
 "use client";
 import Image from "next/image";
+import Ads from "./Ads";
 const Stories = ({categories}) => {
     return ( 
       <div className="max-w-[85rem] px-4 py-10 sm:px-6 lg:px-8 lg:py-14 mx-auto">
@@ -72,6 +73,14 @@ const Stories = ({categories}) => {
                   <path d="M5.27921 2L10.9257 7.64645C11.1209 7.84171 11.1209 8.15829 10.9257 8.35355L5.27921 14" stroke="currentColor" stroke-width="2" strokelinecap="round"/>
                 </svg>
               </p>
+            </div>
+          </a>
+          {/* End Card */}
+
+          {/* Card */}
+          <a className="group rounded-xl overflow-hidden" href="/news/12345">
+            <div className="relative rounded-xl overflow-hidden">
+              <Ads/>
             </div>
           </a>
           {/* End Card */}
