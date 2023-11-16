@@ -81,6 +81,9 @@ const Stories = ({categories}) => {
           <a className="group rounded-xl overflow-hidden" href="/news/12345">
             <div className="relative rounded-xl overflow-hidden">
               <Ads/>
+              <span className="absolute top-0 right-0 rounded-tr-xl rounded-bl-xl text-xs font-medium bg-gray-800 text-white py-1.5 px-3 dark:bg-gray-900">
+                Advertisment
+              </span>
             </div>
           </a>
           {/* End Card */}
