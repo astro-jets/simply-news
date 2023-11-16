@@ -1,25 +1,22 @@
-"use client";
-
-// Plug Ins
+'use client'
+import { useEffect } from "react";
+import React from 'react';
 import('preline');
 
 // Components
-import Hero from './components/Hero';
 import Stories from './components/Stories';
-import Services from './components/Services';
 import AnnouncementBanner  from './components/AnnoucementBanner';
 import ContactForm from './components/ContactForm';
-import Team from './components/Team';
+import Slider from './components/Slider';
 
 export default function Home() {
+  useEffect(()=>{import('@preline/carousel');},[]);
   return (
     <>
-      <Hero/>
+      <Slider/>
       <Stories/>
-      <Services/>
       <AnnouncementBanner />
       <ContactForm/>
-      <Team/>
     </>
   )
 }
