@@ -1,26 +1,32 @@
 const Slider = () => {
     return ( 
         <div data-hs-carousel='{"loadingClasses": "opacity-0","isAutoPlay": true}' className="relative">
-            <div className="hs-carousel relative overflow-hidden w-full min-h-[350px] bg-white text-gray-900 rounded-lg">
+            <div className="hs-carousel relative overflow-hidden w-full min-h-[350px] rounded-lg">
                 <div className="hs-carousel-body absolute top-0 bottom-0 start-0 flex flex-nowrap transition-transform duration-700 opacity-0">
-                <div className="hs-carousel-slide">
-                    <div className="h-full bg-red-900 p-6 relative">
-                    <img src="/4.png" alt="" className="w-full h-full object-cover" />
-                    <span className="bottom-0 bg-[#1118] text-4xl w-full h-12 transition duration-700">
-                        Big Bullets win it again.
-                    </span>
+                    <div className="hs-carousel-slide">
+                        <div className="h-full relative">
+                        <img src="/4.png" alt="" className="w-full h-full object-cover" />
+                        <span className="bottom-4 absolute text-center bg-[#111111b2] text-2xl md:text-4xl w-full h-12 transition duration-700 text-white">
+                            Bullets win it again.
+                        </span>
+                        </div>
                     </div>
-                </div>
-                <div className="hs-carousel-slide">
-                    <div className="flex justify-center h-full bg-blue-800 p-6">
-                    <span className="self-center text-4xl text-gray-900 transition duration-700">Second slide</span>
+                    <div className="hs-carousel-slide">
+                        <div className="h-full relative">
+                        <img src="/palliative.jpg" alt="" className="w-full h-full object-cover" />
+                        <span className="bottom-4 absolute text-center bg-[#111111b2] text-2xl md:text-4xl w-full h-12 transition duration-700 text-white">
+                            New hope for Palliative Care.
+                        </span>
+                        </div>
                     </div>
-                </div>
-                <div className="hs-carousel-slide">
-                    <div className="flex justify-center h-full bg-green-900 p-6">
-                    <span className="self-center text-4xl transition duration-700">Third slide</span>
+                    <div className="hs-carousel-slide">
+                        <div className="h-full relative">
+                        <img src="/malemia.jpg" alt="" className="w-full h-full object-cover" />
+                        <span className="bottom-4 absolute text-center bg-[#111111b2] text-2xl md:text-4xl w-full h-12 transition duration-700 text-white">
+                            Youth doing it Big.
+                        </span>
+                        </div>
                     </div>
-                </div>
                 </div>
             </div>
 
