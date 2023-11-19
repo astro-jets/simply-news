@@ -1,32 +1,37 @@
+// Import necessary modules
+import { Carousel } from 'react-responsive-carousel';
+import 'react-responsive-carousel/lib/styles/carousel.min.css'; // Import carousel styles
 const Ads = () => {
-    return ( 
-        <div data-hs-carousel='{"loadingClasses": "opacity-0","isAutoPlay": true}' className="relative">
-            <div className="hs-carousel relative overflow-hidden w-full bg-blue-300 h-[350px] rounded-lg p-0">
-                <div className="hs-carousel-body absolute top-0 bottom-0 start-0 flex flex-nowrap transition-transform duration-700 opacity-0">
-                    <div className="hs-carousel-slide">
-                        <div className="h-full relative p-2">
-                        <img src="/kfc.jpg" alt="" className="w-full h-full object-cover" />
-                        </div>
-                    </div>
-                    <div className="hs-carousel-slide">
-                        <div className="h-full relative p-2">
-                        <img src="/escom.jpg" alt="" className="w-full h-full object-cover" />
-                        </div>
-                    </div>
-                    <div className="hs-carousel-slide">
-                        <div className="h-full relative p-2">
-                        <img src="/ad.png" alt="" className="w-full h-full object-cover" />
-                        </div>
-                    </div>
-                    <div className="hs-carousel-slide">
-                        <div className="h-full relative p-2">
-                        <img src="/adam.jpg" alt="" className="w-full h-full object-cover" />
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    );
+    return (
+      <div className="relative rounded-xl overflow-hidden">
+        <Carousel
+          showArrows={true}
+          showStatus={false}
+          showIndicators={false}
+          infiniteLoop={true}
+          autoPlay={true}
+          interval={4000} // Set autoplay interval to 5 seconds
+          stopOnHover={true}
+          swipeable={true}
+          emulateTouch={true}
+          dynamicHeight={false}
+          centerMode={false}
+          centerSlidePercentage={100}
+          showThumbs={false}
+          className="relative h-[339px] md:h-full overflow-hidden" // Set initial height using Tailwind classes
+        >
+            <img src="escom.jpg" alt="Image 1" className="w-full h-full object-cover" />
+            <img src="kfc.jpg" alt="Image 2" className="w-full h-full object-cover" />
+            <img src="vega.jpg" alt="Image 2" className="w-full h-full object-cover" />
+            <img src="ad.png" alt="Image 2" className="w-full h-full object-cover" />
+
+          
+        </Carousel>
+        <span className="absolute top-0 right-0 rounded-tr-xl rounded-bl-xl text-xs font-medium bg-gray-800 text-white py-1.5 px-3 dark:bg-gray-900">
+          Advertisment
+        </span>
+      </div>
+  );
 }
  
 export default Ads;

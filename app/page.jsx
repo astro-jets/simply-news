@@ -8,10 +8,14 @@ import ContactForm from './components/ContactForm';
 import Slider from './components/Slider';
 
 export default function Home() {
-  useEffect(()=>{  
-    import('preline');
-    import('@preline/carousel');
-  },[]);
+  useEffect(() => {
+  const loadPreline = async () => {
+    await import('preline');
+    await import('@preline/carousel');
+  };
+  loadPreline();
+}, []);
+
   return (
     <>
       <Slider/>
