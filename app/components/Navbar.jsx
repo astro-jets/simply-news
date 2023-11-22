@@ -1,12 +1,23 @@
+import{auth} from '../config/firebase';
+
 import Image from "next/image";
 
 const Navbar = () => {
+  
+  const logOut =  async()=>{
+    try{
+      await signOut(auth);
+    }
+    catch(err){
+      console.log(err.message);
+    }
+  }
   return ( 
     <header className="flex flex-wrap sm:justify-start sm:flex-col z-50 w-full bg-white border-b border-gray-200 text-sm pb-2 sm:pb-0 dark:border-red-700 dark:bg-gray-100">
       <nav className="relative max-w-[85rem] w-full mx-auto px-4 sm:flex sm:items-center sm:justify-between sm:px-12 lg:px-16" aria-label="Global">
         <div className="flex items-center justify-between h-16">
           <a className="h-full flex py-4 items-center justify-center text-xl font-semibold dark:text-white" href="/" aria-label="Brand">
-          <Image src={"/logo.png"} width={110} height={100}/>
+            <Image src={"/logo.png"} width={110} height={100}/>
           </a>
           <div className="sm:hidden ">
             <button type="button" className="hs-collapse-toggle w-9 h-9 flex justify-center 
@@ -23,7 +34,7 @@ const Navbar = () => {
         <div id="navbar-collapse-with-animation" className="hs-collapse hidden overflow-hidden transition-all duration-300 basis-full grow sm:block">
           <div className="flex flex-col gap-y-4 gap-x-0 mt-5 sm:flex-row sm:items-center sm:justify-end sm:gap-y-0 sm:gap-x-7 sm:mt-0 sm:ps-7">
             {/* News */}
-            {/* <div className="hs-dropdown [--strategy:static] sm:[--strategy:fixed] [--adaptive:none] sm:[--trigger:hover] sm:py-4">
+            <div className="hs-dropdown [--strategy:static] sm:[--strategy:fixed] [--adaptive:none] sm:[--trigger:hover] sm:py-4">
               <button type="button" className="flex items-center w-full text-gray-800 hover:text-gray-500 font-medium dark:text-red-500 dark:hover:text-gray-400">
                 News
                 <svg className="flex-shrink-0 ms-2 w-4 h-4" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></svg>
@@ -67,7 +78,7 @@ const Navbar = () => {
                   All
                 </a>
               </div>
-            </div> */}
+            </div>
 
             {/* Services */}
             <div className="hs-dropdown [--strategy:static] sm:[--strategy:fixed] [--adaptive:none] sm:[--trigger:hover] sm:py-4">
@@ -93,12 +104,12 @@ const Navbar = () => {
             </div>
 
             {/* Long list */}
-            <a className="font-medium text-gray-800 hover:text-gray-500 sm:py-6 dark:text-red-500 dark:hover:text-gray-400" href="/contacts">Enviroment</a>
+            {/* <a className="font-medium text-gray-800 hover:text-gray-500 sm:py-6 dark:text-red-500 dark:hover:text-gray-400" href="/contacts">Enviroment</a>
             <a className="font-medium text-gray-800 hover:text-gray-500 sm:py-6 dark:text-red-500 dark:hover:text-gray-400" href="/contacts">Finance</a>
             <a className="font-medium text-gray-800 hover:text-gray-500 sm:py-6 dark:text-red-500 dark:hover:text-gray-400" href="/contacts">Trade</a>
             <a className="font-medium text-gray-800 hover:text-gray-500 sm:py-6 dark:text-red-500 dark:hover:text-gray-400" href="/contacts">Energy</a>
             <a className="font-medium text-gray-800 hover:text-gray-500 sm:py-6 dark:text-red-500 dark:hover:text-gray-400" href="/contacts">Mining</a>
-            <a className="font-medium text-gray-800 hover:text-gray-500 sm:py-6 dark:text-red-500 dark:hover:text-gray-400" href="/contacts">Tourism</a>
+            <a className="font-medium text-gray-800 hover:text-gray-500 sm:py-6 dark:text-red-500 dark:hover:text-gray-400" href="/contacts">Tourism</a> */}
             {/* Long list end */}
             
             {/* About US */}
@@ -106,17 +117,27 @@ const Navbar = () => {
 
             {/* Contacts US */}
             <a className="font-medium text-gray-800 hover:text-gray-500 sm:py-6 dark:text-red-500 dark:hover:text-gray-400" href="/contacts">Contacts</a>
-
-            {/* Sign in */}
+            { 
+              auth?.currentUser?
+            
+            <a class="flex items-center gap-x-2 font-semibold text-gray-500 hover:text-red-600 sm:border-s sm:border-gray-300 sm:my-6 sm:ps-6 dark:border-gray-700 dark:text-red-500 dark:hover:text-red-500" onClick={handleLogOut}>
+              <svg class="flex-shrink-0 w-4 h-4" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M19 21v-2a4 4 0 0 0-4-4H9a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
+              Sign Out
+            </a>
+            :
+            
             <a class="flex items-center gap-x-2 font-semibold text-gray-500 hover:text-red-600 sm:border-s sm:border-gray-300 sm:my-6 sm:ps-6 dark:border-gray-700 dark:text-red-500 dark:hover:text-red-500" href="/signin">
               <svg class="flex-shrink-0 w-4 h-4" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M19 21v-2a4 4 0 0 0-4-4H9a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
-              Log in
+              Sign In
             </a>
+            }
+            
 
             
           </div>
         </div>
       </nav>
+      {console.log(auth?.currentUser?.email)}
     </header>
   );
 }
