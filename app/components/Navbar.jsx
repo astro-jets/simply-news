@@ -1,8 +1,6 @@
-"use client"
 import{auth} from '../config/firebase';
 import Image from "next/image";
-import { Carousel } from 'react-responsive-carousel';
-import 'react-responsive-carousel/lib/styles/carousel.min.css'; // Import carousel styles
+import TopAds from './TopAds';
 
 const Navbar = () => {
   
@@ -17,34 +15,7 @@ const Navbar = () => {
   
   return ( 
     <>
-    <div className="h-20 w-full bg-black">
-      <Carousel
-    showArrows={false}
-    showStatus={false}
-    showIndicators={false}
-    infiniteLoop={true}
-    autoPlay={true}
-    interval={4000} // Set autoplay interval to 5 seconds
-    stopOnHover={true}
-    swipeable={true}
-    emulateTouch={true}
-    dynamicHeight={false}
-    centerMode={false}
-    centerSlidePercentage={100}
-    showThumbs={false}
-    className="relative h-[339px] md:h-full overflow-hidden" // Set initial height using Tailwind classes
-    >
-      <div className="w-full h-20 flex items-center justify-center bg-red-800 text-white">
-        Slide 1
-      </div>
-      <div className="w-full h-20 flex items-center justify-center text-white">
-        Slide 2
-      </div>
-      <div className="w-full h-20 flex items-center justify-center text-white">
-        Slide 3
-      </div>
-      </Carousel>
-    </div>
+    <TopAds/>
     <header className="flex flex-wrap sm:justify-start sm:flex-col z-50 w-full bg-white border-b border-gray-200 text-sm pb-2 sm:pb-0 dark:border-red-700 dark:bg-gray-100">
       <nav className="relative max-w-[85rem] w-full mx-auto px-4 sm:flex sm:items-center sm:justify-between sm:px-12 lg:px-16" aria-label="Global">
         <div className="flex items-center justify-between h-16">
@@ -74,16 +45,13 @@ const Navbar = () => {
 
               <div className="hs-dropdown-menu transition-[opacity,margin] duration-[0.1ms] sm:duration-[150ms] hs-dropdown-open:opacity-100 opacity-0 sm:w-48 hidden z-10 bg-white sm:shadow-md rounded-lg p-2 dark:bg-red-600 sm:dark:border dark:border-red-700 dark:divide-red-700 before:absolute top-full sm:border before:-top-5 before:start-0 before:w-full before:h-5">
                 <a className="flex items-center gap-x-3.5 py-2 px-3 rounded-lg text-sm text-gray-800 hover:bg-red-100 focus:ring-2 focus:ring-red-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-gray-300 dark:focus:outline-none dark:focus:ring-1 dark:focus:ring-red-600" href="/news">
-                  Enviroment
+                  Mining
                 </a>
                 <a className="flex items-center gap-x-3.5 py-2 px-3 rounded-lg text-sm text-gray-800 hover:bg-gray-100 focus:ring-2 focus:ring-red-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-gray-300 dark:focus:outline-none dark:focus:ring-1 dark:focus:ring-gray-600" href="/news">
-                  Finance
+                  Energy
                 </a>
                 <a className="flex items-center gap-x-3.5 py-2 px-3 rounded-lg text-sm text-gray-800 hover:bg-gray-100 focus:ring-2 focus:ring-red-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-gray-300 dark:focus:outline-none dark:focus:ring-1 dark:focus:ring-gray-600" href="/news">
-                  Trade
-                </a>
-                <a className="flex items-center gap-x-3.5 py-2 px-3 rounded-lg text-sm text-gray-800 hover:bg-gray-100 focus:ring-2 focus:ring-red-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-gray-300 dark:focus:outline-none dark:focus:ring-1 dark:focus:ring-gray-600" href="/news">
-                  CNA TV
+                  Tenders
                 </a>
                 <div className="hs-dropdown relative [--strategy:static] sm:[--strategy:absolute] [--adaptive:none] sm:[--trigger:hover]">
                   <button type="button" className="w-full flex justify-between items-center text-sm text-gray-800 rounded-lg py-2 px-3 hover:bg-gray-100 focus:ring-2 focus:ring-red-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-gray-300 dark:focus:outline-none dark:focus:ring-1 dark:focus:ring-gray-600">
@@ -93,10 +61,14 @@ const Navbar = () => {
 
                   <div className="hs-dropdown-menu transition-[opacity,margin] duration-[0.1ms] sm:duration-[150ms] hs-dropdown-open:opacity-100 opacity-0 sm:w-48 hidden z-10 sm:mt-2 bg-white sm:shadow-md rounded-lg p-2 dark:bg-red-600 sm:dark:border dark:border-gray-700 dark:divide-gray-700 before:absolute sm:border before:-end-5 before:top-0 before:h-full before:w-5 top-0 end-full !mx-[10px]">
                     <a className="flex items-center gap-x-3.5 py-2 px-3 rounded-lg text-sm text-gray-800 hover:bg-gray-100 focus:ring-2 focus:ring-red-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-gray-300 dark:focus:outline-none dark:focus:ring-1 dark:focus:ring-gray-600" href="/news">
-                      Energy
+                      Trade
+                    </a>
+                    
+                    <a className="flex items-center gap-x-3.5 py-2 px-3 rounded-lg text-sm text-gray-800 hover:bg-gray-100 focus:ring-2 focus:ring-red-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-gray-300 dark:focus:outline-none dark:focus:ring-1 dark:focus:ring-gray-600" href="/news">
+                      CNA TV
                     </a>
                     <a className="flex items-center gap-x-3.5 py-2 px-3 rounded-lg text-sm text-gray-800 hover:bg-gray-100 focus:ring-2 focus:ring-red-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-gray-300 dark:focus:outline-none dark:focus:ring-1 dark:focus:ring-gray-600" href="/news">
-                      Mining
+                      Enviroment
                     </a>
                     <a className="flex items-center gap-x-3.5 py-2 px-3 rounded-lg text-sm text-gray-800 hover:bg-gray-100 focus:ring-2 focus:ring-red-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-gray-300 dark:focus:outline-none dark:focus:ring-1 dark:focus:ring-gray-600" href="/news">
                       Tourism

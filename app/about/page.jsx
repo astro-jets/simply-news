@@ -1,11 +1,10 @@
 "use client";
-import('preline')
+
 import Image from "next/image";
-// import { useEffect } from "react";
-import Team from "../components/Team";
+import { useEffect } from "react";
 
 const about = () => {
-    // useEffect(() => {import('preline')}, []);
+    useEffect(() => {import('preline')}, []);
     return ( 
         <>
         {/* Mission Statement */}
@@ -279,8 +278,6 @@ const about = () => {
                 </div>
             </div>
         </section>
-
-        <Team/>
         </>
      );
 }
