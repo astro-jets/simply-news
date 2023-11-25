@@ -1,4 +1,5 @@
-import{auth} from '../config/firebase';
+"use client"
+import{auth} from '../firebase';
 import Image from "next/image";
 import TopAds from './TopAds';
 

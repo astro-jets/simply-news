@@ -1,10 +1,10 @@
 "use client";
-
+import('preline')
 import Image from "next/image";
-import { useEffect } from "react";
+// import { useEffect } from "react";
 
 const about = () => {
-    useEffect(() => {import('preline')}, []);
+    // useEffect(() => {import('preline')}, []);
     return ( 
         <>
         {/* Mission Statement */}
