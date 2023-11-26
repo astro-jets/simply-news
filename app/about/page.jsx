@@ -6,7 +6,7 @@ import Image from "next/image";
 const about = () => {
     // useEffect(() => {import('preline')}, []);
     return ( 
-        <>
+        <div className="mb-12">
         {/* Mission Statement */}
         <section className="flex items-center bg-stone-100 xl:h-screen font-poppins dark:bg-[#111] mt-12">
             <div className="justify-center flex-1 max-w-6xl py-4 mx-auto lg:py-6 md:px-6">
@@ -45,16 +45,16 @@ const about = () => {
         </section>
 
         {/* FAQs */}
-        <section className="flex items-center bg-white h-full xl:h-screen dark:bg-[#222] font-poppins">
-            <div className="max-w-5xl p-4 mx-auto">
-                <div className="text-center mb-14">
-                    <h1 className="mb-4 text-3xl font-bold dark:text-white"> Frequently Asked Questions </h1>
+        <section className="flex items-center bg-white py-4 dark:bg-[#222] font-poppins">
+            <div className="max-w-5xl mt-12 mx-auto">
+                <div className="text-center">
+                    <h1 className="text-3xl font-bold dark:text-white"> Frequently Asked Questions </h1>
                     <p className="max-w-xl mx-auto text-gray-500">
                       Below are a list of questions our customers ask Frequently.
                     </p>
                 </div>
                 {/*  Tab Nav */}
-                <nav className="max-w-6xl mx-auto mb-14 grid sm:flex gap-y-px sm:gap-y-0 sm:gap-x-4" aria-label="Tabs" role="tablist">
+                <nav className="max-w-6xl mx-auto mt-14 grid sm:flex gap-y-px sm:gap-y-0 sm:gap-x-4" aria-label="Tabs" role="tablist">
                     <button type="button" className="hs-tab-active:bg-gray-100 hs-tab-active:hover:border-transparent w-full flex justify-between items-center md:flex-col text-start hover:bg-gray-100 p-3 md:p-5 rounded-xl dark:hs-tab-active:bg-white/[.05] dark:hover:bg-gray-700 dark:focus:outline-none dark:focus:ring-1 dark:focus:ring-gray-600 active" id="tabs-with-card-item-1" data-hs-tab="#tabs-with-card-1" aria-controls="tabs-with-card-1" role="tab">
                     <svg className="flex-shrink-0  sm:block h-7 w-7 hs-tab-active:text-red-600 text-gray-800 dark:hs-tab-active:text-red-500 dark:text-white" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 5.5A3.5 3.5 0 0 1 8.5 2H12v7H8.5A3.5 3.5 0 0 1 5 5.5z"/><path d="M12 2h3.5a3.5 3.5 0 1 1 0 7H12V2z"/><path d="M12 12.5a3.5 3.5 0 1 1 7 0 3.5 3.5 0 1 1-7 0z"/><path d="M5 19.5A3.5 3.5 0 0 1 8.5 16H12v3.5a3.5 3.5 0 1 1-7 0z"/><path d="M5 12.5A3.5 3.5 0 0 1 8.5 9H12v7H8.5A3.5 3.5 0 0 1 5 12.5z"/></svg>
                     <span className="md:mt-5">
@@ -77,7 +77,7 @@ const about = () => {
                     </button>
                 </nav>
                 {/*  End Tab Nav */}
-                <div className="w-full">
+                <div className="w-full mt-14">
                     {/* Tab 1 */}
                     <div id="tabs-with-card-1" role="tabpanel" aria-labelledby="tabs-with-card-item-1">
                         <div className="grid grid-cols-1 gap-8 lg:grid-cols-2">
@@ -278,7 +278,7 @@ const about = () => {
                 </div>
             </div>
         </section>
-        </>
+        </div>
      );
 }
  
