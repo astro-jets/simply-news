@@ -1,3 +1,4 @@
+"use client"
 import { BsNewspaper } from "react-icons/bs";
 import {FaPlusCircle, FaUser} from "react-icons/fa";
 
