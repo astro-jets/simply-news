@@ -7,6 +7,7 @@ import AnnouncementBanner  from './components/AnnoucementBanner';
 import ContactForm from './components/ContactForm';
 import Slider from './components/Slider';
 import Ads from "./components/Ads";
+import Videos from "./components/Videos";
 
 export default function Home() {
   useEffect(() => {
@@ -29,6 +30,7 @@ export default function Home() {
       </div>
       <Stories/>
       <AnnouncementBanner />
+      <Videos/>
       <ContactForm/>
     </>
   )
