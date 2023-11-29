@@ -1,3 +1,4 @@
+import Image from "next/image";
 import { FaPlayCircle } from "react-icons/fa";
 
 const Videos = () => {
@@ -10,7 +11,8 @@ const Videos = () => {
       {/* Video Card */}
       <div class="flex flex-col bg-white dark:bg-[#333] rounded-lg shadow-lg overflow-hidden h-96">
         <div class="relative h-[80%] overflow-hidden">
-          <img class="w-full h-full object-cover" src="/v1.jpg" alt="Video Thumbnail"/>
+            <Image class="w-full h-full object-cover" layout="fill" src="/v1.jpg" alt="Video Thumbnail"/>
+          {/* <img class="w-full h-full object-cover" src="/v1.jpg" alt="Video Thumbnail"/> */}
           <button class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 bg-red-500 text-white rounded-full p-2">
             <FaPlayCircle size={40} color="#fff"/>
           </button>
@@ -23,7 +25,7 @@ const Videos = () => {
       
       <div class="flex flex-col bg-white dark:bg-[#333] rounded-lg shadow-lg overflow-hidden h-96">
         <div class="relative h-[80%] overflow-hidden">
-          <img class="w-full h-full object-cover" src="/v2.jpg" alt="Video Thumbnail"/>
+          <Image class="w-full h-full object-cover" layout="fill" src="/v2.jpg" alt="Video Thumbnail"/>
           <button class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 bg-red-500 text-white rounded-full p-2">
             <FaPlayCircle size={40} color="#fff"/>
           </button>
@@ -36,7 +38,7 @@ const Videos = () => {
 
       <div class="flex flex-col bg-white dark:bg-[#333] rounded-lg shadow-lg overflow-hidden h-96">
         <div class="relative h-[80%] overflow-hidden">
-          <img class="w-full h-full object-cover" src="/v4.jpg" alt="Video Thumbnail"/>
+          <Image class="w-full h-full object-cover" layout="fill" src="/v4.jpg" alt="Video Thumbnail"/>
           <button class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 bg-red-500 text-white rounded-full p-2">
             <FaPlayCircle size={40} color="#fff"/>
           </button>
@@ -49,7 +51,7 @@ const Videos = () => {
 
       <div class="flex flex-col bg-white dark:bg-[#333] rounded-lg shadow-lg overflow-hidden h-96">
         <div class="relative h-[80%] overflow-hidden">
-          <img class="w-full h-full object-cover" src="/v3.jpg" alt="Video Thumbnail"/>
+          <Image class="w-full h-full object-cover" layout="fill"  src="/v3.jpg" alt="Video Thumbnail"/>
           <button class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 bg-red-500 text-white rounded-full p-2">
             <FaPlayCircle size={40} color="#fff"/>
           </button>
