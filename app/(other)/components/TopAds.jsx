@@ -4,7 +4,7 @@ import { Carousel } from 'react-responsive-carousel';
 import 'react-responsive-carousel/lib/styles/carousel.min.css'; // Import carousel styles
 const TopAds = () => {
     return ( 
-        <div className="h-24 md:h-32 w-full bg-black">
+        <div className="h-24 md:h-40 w-full bg-black">
             <Carousel
         showArrows={false}
         showStatus={false}
