@@ -1,4 +1,5 @@
 // Import necessary modules
+import Image from 'next/image';
 import { Carousel } from 'react-responsive-carousel';
 import 'react-responsive-carousel/lib/styles/carousel.min.css'; // Import carousel styles
 const Ads = () => {
@@ -18,12 +19,16 @@ const Ads = () => {
           centerMode={false}
           centerSlidePercentage={100}
           showThumbs={false}
-          className="relative h-[339px] md:h-full overflow-hidden" // Set initial height using Tailwind classes
+          className="relative w-full h-full h-max-[70vh] overflow-hidden" // Set initial height using Tailwind classes
         >
-            <img src="escom.jpg" alt="Image 1" className="w-full h-full object-cover" />
-            <img src="kfc.jpg" alt="Image 2" className="w-full h-full object-cover" />
-            <img src="vega.jpg" alt="Image 2" className="w-full h-full object-cover" />
-            <img src="ad.png" alt="Image 2" className="w-full h-full object-cover" />
+            <Image src={'/escom.jpg'} layout='responsive' width={500} height={500} alt='malemia' className='w-full max-h-[70vh]'/>
+            <Image src={'/kfc.jpg'} layout='responsive' width={500} height={500} alt='malemia' className='w-full max-h-[70vh]'/>
+            <Image src={'/ad.png'} layout='responsive' width={500} height={500} alt='malemia' className='w-full max-h-[70vh]'/>
+            <Image src={'/vega.jpg'} layout='responsive' width={500} height={500} alt='malemia' className='w-full max-h-[70vh]'/>
+         
+         
+         
+         
 
           
         </Carousel>

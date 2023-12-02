@@ -24,8 +24,8 @@ export default function Home() {
         <div className="md:w-3/4 ">
           <Slider/>
         </div>
-        <div className="md:w-1/4 h-full hidden md:flex items-center justify-center">
-          <Ads/>
+        <div className="md:w-2/4 h-[70vh] hidden md:flex">
+          <Ads />
         </div>
       </div>
       <Stories/>

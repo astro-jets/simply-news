@@ -20,7 +20,7 @@ function Slider() {
       centerMode={false}
       centerSlidePercentage={100}
       showThumbs={false}
-      className="relative h-[50vh] md:h-[70vh] overflow-hidden" // Set initial height using Tailwind classes
+      className="relative h-full max-h-[50vh] md:max-h-[70vh] overflow-hidden" // Set initial height using Tailwind classes
     >
       <div className='w-full h-full md:h-[70vh]'>
         <img src="/2.png" alt="Image 1" className="w-full h-full object-cover md:object-top" />
