@@ -21,10 +21,18 @@ const Ads = () => {
           showThumbs={false}
           className="relative w-full h-full h-max-[70vh] overflow-hidden" // Set initial height using Tailwind classes
         >
-            <Image src={'/escom.jpg'} layout='responsive' width={500} height={500} alt='malemia' className='w-full max-h-[70vh]'/>
-            <Image src={'/kfc.jpg'} layout='responsive' width={500} height={500} alt='malemia' className='w-full max-h-[70vh]'/>
-            <Image src={'/ad.png'} layout='responsive' width={500} height={500} alt='malemia' className='w-full max-h-[70vh]'/>
-            <Image src={'/vega.jpg'} layout='responsive' width={500} height={500} alt='malemia' className='w-full max-h-[70vh]'/>
+            <Image src={'/ad.jpeg'} layout='responsive' width={500} height={500} alt='malemia' className='w-full max-h-[70vh]'/>
+            <Image src={'/ad2.jpeg'} layout='responsive' width={500} height={500} alt='malemia' className='w-full max-h-[70vh]'/>
+            <Image src={'/ad3.jpeg'} layout='responsive' width={500} height={500} alt='malemia' className='w-full max-h-[70vh]'/>
+            <Image src={'/ad4.jpeg'} layout='responsive' width={500} height={500} alt='malemia' className='w-full max-h-[70vh]'/>
+            <Image src={'/ad5.jpeg'} layout='responsive' width={500} height={500} alt='malemia' className='w-full max-h-[70vh]'/>
+            <Image src={'/ad6.jpeg'} layout='responsive' width={500} height={500} alt='malemia' className='w-full max-h-[70vh]'/>
+            <Image src={'/ad7.jpeg'} layout='responsive' width={500} height={500} alt='malemia' className='w-full max-h-[70vh]'/>
+            <Image src={'/ad8.jpeg'} layout='responsive' width={500} height={500} alt='malemia' className='w-full max-h-[70vh]'/>
+            <Image src={'/ad9.jpeg'} layout='responsive' width={500} height={500} alt='malemia' className='w-full max-h-[70vh]'/>
+            <Image src={'/ad10.jpeg'} layout='responsive' width={500} height={500} alt='malemia' className='w-full max-h-[70vh]'/>
+            <Image src={'/ad11.jpeg'} layout='responsive' width={500} height={500} alt='malemia' className='w-full max-h-[70vh]'/>
+            <Image src={'/ad12.jpeg'} layout='responsive' width={500} height={500} alt='malemia' className='w-full max-h-[70vh]'/>
          
          
          

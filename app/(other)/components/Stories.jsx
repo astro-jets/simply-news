@@ -59,11 +59,9 @@ const Stories = ({categories}) => {
             </div>
 
             <div className="mt-7">
-              <div className="flex items-center mb-1">
-                <div>
-                  <h1 className="text-white text-md">Bester Kayaye</h1>
-                  <span className="text-red-700 text-sm">12 Nov 2023</span>
-                </div>
+              <div className="flex items-center justify-between mb-1">
+                <h1 className="text-white text-md">Bester Kayaye</h1>
+                <span className="text-red-700 text-sm">12 Nov 2023</span>
               </div>
               <h3 className="text-xl font-semibold text-gray-800 group-hover:text-gray-600 dark:text-gray-200">
                 Big Bullets win Big.
@@ -100,11 +98,9 @@ const Stories = ({categories}) => {
             </div>
 
             <div className="mt-7">
-              <div className="flex items-center mb-1">
-                <div>
-                  <h1 className="text-white text-md">Bester Kayaye</h1>
-                  <span className="text-red-700 text-sm">12 Nov 2023</span>
-                </div>
+            <div className="flex items-center justify-between mb-1">
+                <h1 className="text-white text-md">Bester Kayaye</h1>
+                <span className="text-red-700 text-sm">12 Nov 2023</span>
               </div>
               <h3 className="text-xl font-semibold text-gray-800 group-hover:text-gray-600 dark:text-gray-200">
                 New plans for silver.
@@ -138,11 +134,9 @@ const Stories = ({categories}) => {
             </div>
 
             <div className="mt-7">
-              <div className="flex items-center mb-1">
-                <div>
-                  <h1 className="text-white text-md">Bester Kayaye</h1>
-                  <span className="text-red-700 text-sm">12 Nov 2023</span>
-                </div>
+            <div className="flex items-center justify-between mb-1">
+                <h1 className="text-white text-md">Bester Kayaye</h1>
+                <span className="text-red-700 text-sm">12 Nov 2023</span>
               </div>
               <h3 className="text-xl font-semibold text-gray-800 group-hover:text-gray-600 dark:text-gray-200">
                 Big Bullets win Big.
@@ -176,11 +170,9 @@ const Stories = ({categories}) => {
             </div>
 
             <div className="mt-7">
-              <div className="flex items-center mb-1">
-                <div>
+              <div className="flex items-center justify-between mb-1">
                   <h1 className="text-white text-md">Malemia youth winning</h1>
                   <span className="text-red-700 text-sm">12 Nov 2023</span>
-                </div>
               </div>
               <h3 className="text-xl font-semibold text-gray-800 group-hover:text-gray-600 dark:text-gray-200">
                 Youth doin Big.
