@@ -8,6 +8,15 @@ const Stories = ({categories}) => {
           <h2 className="text-2xl font-bold md:text-4xl md:leading-tight dark:text-white">Latest News</h2>
           <p className="mt-1 text-gray-600 dark:text-gray-400">Stay in the know with the latest stories.</p>
         </div>
+
+        <div className="w-full my-12 flex justify-center overflow-hidden">
+          <div className="flex flex-wrap justify-around w-full md:w-1/2">
+            <a href="/news" className="text-black dark:text-white hover:bg-red-700 hover:text-white p-3 rounded-md">Agriculture</a>
+            <a href="/news" className="text-black dark:text-white hover:bg-red-700 hover:text-white p-3 rounded-md">Business</a>
+            <a href="/news" className="text-black dark:text-white hover:bg-red-700 hover:text-white p-3 rounded-md">Tech</a>
+            <a href="/news" className="text-black dark:text-white hover:bg-red-700 hover:text-white p-3 rounded-md">Enviroment</a>
+          </div>
+        </div>
         {/* End Title */}
         {categories && 
           <div className="w-full h-12 hs-dropdown mb-8">
