@@ -27,7 +27,8 @@ body {
 }
 
 .carousel .slide .legend{
- font-size: 1.3rem !important;
+  background:#1111118f !important;
+ font-size: 1.8rem !important;
  width: 100% !important;
  margin: 0 !important;
  left:0 !important;
