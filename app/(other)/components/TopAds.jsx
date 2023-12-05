@@ -20,7 +20,7 @@ const TopAds = () => {
         centerMode={false}
         centerSlidePercentage={100}
         showThumbs={false}
-        className="relative h-[339px] md:h-full overflow-hidden"
+        className="relative max-h-[339px] md:h-full overflow-hidden" // Set initial height using Tailwind classes
         >
             <div className="w-full h-full flex items-center justify-center text-white">
                 <img src="/ta1.jpg" className='h-full w-full object-cover' alt="" />
