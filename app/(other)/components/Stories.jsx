@@ -4,13 +4,13 @@ const Stories = ({categories}) => {
     return ( 
       <div className="max-w-[85rem] px-4 sm:px-6 lg:px-8 lg:py-14 mx-auto">
         {/* Title */}
-        <div className="max-w-2xl mx-auto text-center mb-10 lg:mb-14">
+        <div className="max-w-2xl mx-auto text-center mb-4">
           <h2 className="text-2xl font-bold md:text-4xl md:leading-tight dark:text-white">Latest News</h2>
           <p className="mt-1 text-gray-600 dark:text-gray-400">Stay in the know with the latest stories.</p>
         </div>
 
-        <div className="w-full my-12 flex justify-center overflow-hidden">
-          <div className="flex flex-wrap justify-around w-full md:w-1/2">
+        <div className="w-full flex justify-center overflow-hidden">
+          <div className="flex flex-wrap justify-between mb-4 w-full md:w-1/2">
             <a href="/news" className="text-black dark:text-white hover:bg-red-700 hover:text-white p-3 rounded-md">Agriculture</a>
             <a href="/news" className="text-black dark:text-white hover:bg-red-700 hover:text-white p-3 rounded-md">Business</a>
             <a href="/news" className="text-black dark:text-white hover:bg-red-700 hover:text-white p-3 rounded-md">Tech</a>
