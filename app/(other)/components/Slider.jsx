@@ -24,17 +24,23 @@ function Slider() {
     >
       <div className='w-full h-full md:h-[70vh]'>
         <img src="/2.png" alt="Image 1" className="w-full h-full object-cover md:object-top" />
-        <p className="legend relative text-center text-white bg-gray-900  p-2">New chapter for silver strikers</p>
+        <p className="legend relative">
+          <span className='text-white absolute bottom-0 left-0 p-2'>New chapter for silver strikers</span>
+        </p>
       </div>
 
       <div className='w-full h-full md:h-[70vh]'>
         <Image width={500} height={500} src="/palliative.jpg" alt="Image 2" className="w-full h-full object-cover md:object-top" />
-        <p className="legend text-center text-white bg-gray-900  p-2">Palliative care matters</p>
+        <p className="legend relative">
+          <span className='text-white absolute bottom-0 left-0 p-2'>Palliative care matters</span>
+        </p>
       </div>
       
       <div className='w-full h-full md:h-[70vh]'>
         <Image width={500} height={500} src="/4.png" alt="Image 2" className="w-full h-full object-cover md:object-top" />
-        <p className="legend text-center text-white bg-gray-900  p-2">Bullets win agian</p>
+        <p className="legend relative">
+          <span className='text-white absolute bottom-0 left-0 p-2'>Bullets Win again</span>
+        </p>
       </div>
     </Carousel>
   );

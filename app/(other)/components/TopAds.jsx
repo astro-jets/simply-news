@@ -1,11 +1,10 @@
 "use client"
 
-import Image from 'next/image';
 import { Carousel } from 'react-responsive-carousel';
 import 'react-responsive-carousel/lib/styles/carousel.min.css'; // Import carousel styles
 const TopAds = () => {
     return ( 
-        <div className="h-full md:h-40 w-full bg-black">
+        <div className="max-h-[339px] md:h-full w-full bg-black m-0">
             <Carousel
         showArrows={false}
         showStatus={false}
@@ -20,7 +19,7 @@ const TopAds = () => {
         centerMode={false}
         centerSlidePercentage={100}
         showThumbs={false}
-        className="relative max-h-[339px] md:h-full overflow-hidden" // Set initial height using Tailwind classes
+        className="relative max-h-[339px] md:h-full overflow-hidden m-0" // Set initial height using Tailwind classes
         >
             <div className="w-full h-full flex items-center justify-center text-white">
                 <img src="/ta1.jpg" className='h-full w-full object-cover' alt="" />

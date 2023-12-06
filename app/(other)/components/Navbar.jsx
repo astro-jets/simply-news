@@ -22,7 +22,7 @@ const Navbar = () => {
       <nav className="relative max-w-[85rem] w-full mx-auto px-4 sm:flex sm:items-center sm:justify-between sm:px-12 lg:px-16" aria-label="Global">
         <div className="flex items-center justify-between h-16">
           <a className="h-full flex py-4 items-center justify-center text-xl font-semibold dark:text-white" href="/" aria-label="Brand">
-            <Image src={"/logo.png"} width={110} height={100}/>
+            <Image src={"/logo.png"}  width={150} height={150}/>
           </a>
           <div className="sm:hidden ">
             <button type="button" className="hs-collapse-toggle w-9 h-9 flex justify-center 
@@ -47,7 +47,7 @@ const Navbar = () => {
             {/* Services */}
             <div className="hs-dropdown [--strategy:static] sm:[--strategy:fixed] [--adaptive:none] sm:[--trigger:hover] sm:py-4">
               <button type="button" className="flex items-center w-full text-gray-800 hover:text-gray-500 font-medium dark:text-red-500 dark:hover:text-gray-400">
-                Drirectory
+                Directory
                 <svg className="flex-shrink-0 ms-2 w-4 h-4" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="m6 9 6 6 6-6"/></svg>
               </button>
 
@@ -115,22 +115,22 @@ const Navbar = () => {
             <a className="font-medium text-gray-800 hover:text-gray-500 sm:py-6 dark:text-red-500 dark:hover:text-gray-400" href="/about">About</a>
 
             <a className="flex items-center gap-x-2 font-semibold text-gray-500 h-full hover:text-red-600 sm:border-s sm:border-gray-300 sm:my-6 sm:ps-6 dark:border-gray-700 dark:text-red-500 dark:hover:text-red-500" onClick={handleLogOut}>
-              <BsSearch size={15} className='text-red-500'/>
               <input type="text" placeholder='Search' className='h-full border-red-500 border-2 rounded-lg p-1 text-black' />
+              <BsSearch size={15} className='text-red-500'/>
             </a>
 
             { 
               auth?.currentUser?
             
               <a className="flex items-center gap-x-2 font-semibold text-gray-500 hover:text-red-600 sm:border-s sm:border-gray-300 sm:my-6 sm:ps-6 dark:border-gray-700 dark:text-red-500 dark:hover:text-red-500" onClick={handleLogOut}>
-                <svg className="flex-shrink-0 w-4 h-4" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M19 21v-2a4 4 0 0 0-4-4H9a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
                 Sign Out
+                <svg className="flex-shrink-0 w-4 h-4" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M19 21v-2a4 4 0 0 0-4-4H9a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
               </a>
               :
               
               <a className="flex items-center gap-x-2 font-semibold text-gray-500 hover:text-red-600 sm:border-s sm:border-gray-300 sm:my-6 sm:ps-6 dark:border-gray-700 dark:text-red-500 dark:hover:text-red-500" href="/signin">
-                <svg className="flex-shrink-0 w-4 h-4" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M19 21v-2a4 4 0 0 0-4-4H9a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
                 Sign In
+                <svg className="flex-shrink-0 w-4 h-4" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M19 21v-2a4 4 0 0 0-4-4H9a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
               </a>
             }
             

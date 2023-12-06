@@ -6,15 +6,14 @@ const Stories = ({categories}) => {
         {/* Title */}
         <div className="max-w-2xl mx-auto text-center mb-4">
           <h2 className="text-2xl font-bold md:text-4xl md:leading-tight dark:text-white">Latest News</h2>
-          <p className="mt-1 text-gray-600 dark:text-gray-400">Stay in the know with the latest stories.</p>
         </div>
 
         <div className="w-full flex justify-center overflow-hidden">
-          <div className="flex flex-wrap justify-between mb-4 w-full md:w-1/2">
-            <a href="/news" className="text-black dark:text-white hover:bg-red-700 hover:text-white p-3 rounded-md">Agriculture</a>
-            <a href="/news" className="text-black dark:text-white hover:bg-red-700 hover:text-white p-3 rounded-md">Business</a>
-            <a href="/news" className="text-black dark:text-white hover:bg-red-700 hover:text-white p-3 rounded-md">Tech</a>
-            <a href="/news" className="text-black dark:text-white hover:bg-red-700 hover:text-white p-3 rounded-md">Enviroment</a>
+          <div className="flex flex-wrap justify-between mb-4 w-full md:w-1/2 md:mt-4">
+            <a href="/news" className="scale-75 md:scale-100 dark:text-white bg-red-700 hover:text-white p-3 rounded-md">Agriculture</a>
+            <a href="/news" className="scale-75 md:scale-100 dark:text-white bg-red-700 hover:text-white p-3 rounded-md">Business</a>
+            <a href="/news" className="scale-75 md:scale-100 dark:text-white bg-red-700 hover:text-white p-3 rounded-md">Tech</a>
+            <a href="/news" className="scale-75 md:scale-100 dark:text-white bg-red-700 hover:text-white p-3 rounded-md">Enviroment</a>
           </div>
         </div>
         {/* End Title */}

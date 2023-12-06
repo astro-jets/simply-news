@@ -1,6 +1,6 @@
 const AnnouncementBanner  = () => {
     return ( 
-        <div className="bg-gradient-to-r from-red-700 to-red-500">
+        <div className="bg-gradient-to-r from-red-700 to-red-500 mt-4 md:m-0">
         <div className="max-w-[85rem] px-4 py-4 sm:px-6 lg:px-8 mx-auto">
           {/* Grid */}
           <div className="grid justify-center md:grid-cols-2 md:justify-between md:items-center gap-2">

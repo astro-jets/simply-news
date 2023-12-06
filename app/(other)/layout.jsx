@@ -14,6 +14,13 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
+    <head>
+      <script
+          src="https://www.youtube.com/iframe_api"
+          async
+          defer
+        ></script>
+    </head>
       <body className={inter.className}>
         <div className="dark:bg-[#111]">
           <Navbar/>
