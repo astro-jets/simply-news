@@ -1,19 +1,14 @@
-import mongoose from "mongoose";
+import mongoose, { Schema } from "mongoose";
 
-const blogSchema = new mongoose.Schema({
-    title:String,
-    author:{
-        type:String,
-        default:"Mphatso"
-    },
-    category:String,
-    story:String,
-    date:{
-        type:Date,
-        default:Date.now()
-    }
+const BlogSchema = new Schema({
+  title: String,
+  story: String,
+  category: String,
+  author: { type: String, default: "Astro" },
+  createdAt: { type: Date, default: Date.now },
+  updatedAt: { type: Date, default: Date.now },
 });
 
-const Blog = mongoose.model.Blog || mongoose.model('Blog',blogSchema)
+const Blog = mongoose.model("Blog", BlogSchema);
 
 export default Blog;
