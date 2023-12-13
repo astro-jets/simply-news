@@ -8,8 +8,7 @@ const Category = async ({ params }) => {
         cache:'no-cache'
     });
     const stories = await response.json();
-    // const v = stories
-    // console.log(v.data.title)
+    
     return ( 
         <Stories stories={stories.data}/>
      );
