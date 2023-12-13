@@ -1,5 +1,4 @@
 import SignInForm from "../components/signin";
-import('preline');
 
 const SignIn = () => {
     return ( 

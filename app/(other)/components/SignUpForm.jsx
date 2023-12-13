@@ -1,3 +1,4 @@
+"use client";
 import { useState } from 'react';
 import{auth, googleProvider} from '../firebase';
 import {
@@ -6,6 +7,7 @@ import {
 } from 'firebase/auth';
 
 const SignUpForm = () => {
+    useEffect(()=>{import('preline')},[])
     const [email,setEmail] = useState("");
     const [password,setPassword] = useState("");
 
