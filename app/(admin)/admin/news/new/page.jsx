@@ -1,22 +1,47 @@
 "use client"
 
-import { registerNewBlog } from "@/services/Blogs";
 import { useState } from "react";
 
 // Initial state
 const initialFormData = {
     title:'',
     category:'',
-    story:''
+    story:'',
+    image:'',
+    imageType:''
 }
 
 const newPost = () => {
-    const [formData, setFormData] = useState(initialFormData);
-    
+    const [formData, setFormData] = useState(initialFormData);    
+
+    const handleChangeImage = (event) => {
+        const file = event.target.files[0];
+        const reader = new FileReader();
+
+        reader.onload = (event) => {
+        setFormData({
+            ...formData,
+            image: new Buffer.from(event.target.result,'base64'),
+            imageType:file.type
+        });
+        };
+
+        reader.readAsArrayBuffer(file);
+    };
 
     async function handleSubmit(){
-        const data = await registerNewBlog(formData);
-        console.log(data);
+        console.log('file',formData)
+        const response = await fetch("http://localhost:3000/api/blogs/new",{
+            method:"POST",
+            headers:{"content-type":"application/json"},
+            cache:'no-store',
+            body:JSON.stringify(formData)
+        });
+        const status = await response.json();
+        if(status.status === 'true')
+        {
+            console.log(status);
+        }
     }
     
     return ( 
@@ -49,7 +74,9 @@ const newPost = () => {
                     <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 lg:gap-6">
                         <div>
                             <label for="blog-image" className="block mb-2 text-sm text-gray-700 font-medium dark:text-white">Blog Image</label>
-                            <input type="file" name="blog-image" id="blog-image" className="py-3 px-4 block w-full border-gray-200 rounded-lg text-sm focus:border-blue-500 focus:ring-blue-500 disabled:opacity-50 disabled:pointer-events-none dark:bg-slate-900 dark:border-gray-700 dark:text-gray-400 dark:focus:ring-gray-600"/>
+                            <input type="file" name="blog-image" id="blog-image" className="py-3 px-4 block w-full border-gray-200 rounded-lg text-sm focus:border-blue-500 focus:ring-blue-500 disabled:opacity-50 disabled:pointer-events-none dark:bg-slate-900 dark:border-gray-700 dark:text-gray-400 dark:focus:ring-gray-600"
+                                onChange={(e)=>{handleChangeImage(e)}}
+                            />
                         </div>
 
                         <div>

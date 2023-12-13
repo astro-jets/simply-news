@@ -2,14 +2,14 @@ import connectDB from "@/utils/db";
 import Blog from "@/models/blog";
 import { NextResponse } from "next/server";
 
-// export const dynamic = 'force-dynamic';
+export const dynamic = 'force-dynamic';
 
 export async function POST (req){
     await connectDB();
-    const {title,story,category} = await req.json();
+    const {title,story,category,image,imageType} = await req.json();
     try{
         const newBlog = await Blog.create({
-            title,story,category
+            title,story,category,image,imageType
         });
 
         if(newBlog){
