@@ -2,9 +2,11 @@
 
 import Image from "next/image";
 import Ads from "./Ads";
+import { useEffect } from "react";
 
 
-const Stories = ({stories}) => {  
+const Stories = ({stories}) => { 
+    useEffect(()=>{import('preline')},[]) 
     return ( 
       <div className="max-w-[85rem] px-4 sm:px-6 lg:px-8 lg:py-14 mx-auto">
         <div className="max-w-2xl mx-auto text-center mb-4">

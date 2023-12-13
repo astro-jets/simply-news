@@ -1,6 +1,6 @@
 "use client"
 
-import { useState } from "react";
+import { useEffect, useState } from "react";
 
 // Initial state
 const initialFormData = {
@@ -12,6 +12,8 @@ const initialFormData = {
 }
 
 const newPost = () => {
+    useEffect(()=>{import('preline')},[])
+    
     const [formData, setFormData] = useState(initialFormData);    
 
     const handleChangeImage = (event) => {
