@@ -1,13 +1,11 @@
 "use client";
-import('preline')
 import Image from "next/image";
-import Faqs from "../components/Faqs";
 import { FaFacebook, FaInstagram, FaLinkedin } from "react-icons/fa";
 import { BsTwitterX } from "react-icons/bs";
-// import { useEffect } from "react";
+import { useEffect } from "react";
 
 const about = () => {
-    // useEffect(() => {import('preline')}, []);
+    useEffect(() => {import('preline')}, []);
     return ( 
         <div className="h-full">
             {/* Mission Statement */}
