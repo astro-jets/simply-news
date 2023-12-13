@@ -1,16 +1,17 @@
-import Stories from "../../components/Stories";
+// import Stories from "../../components/Stories";
 
 const Category = async ({ params }) => {
     const category = params.category;
     
-    const response = await fetch(`https://simply-news-tau.vercel.app/api/blogs/category/?category=${category}`,
-    {
-        cache:'no-cache'
-    });
-    const stories = await response.json();
+    // const response = await fetch(`https://simply-news-tau.vercel.app/api/blogs/category/?category=${category}`,
+    // {
+    //     cache:'no-cache'
+    // });
+    // const stories = await response.json();
     
     return ( 
-        <Stories stories={stories.data}/>
+        <h1>{category}</h1>
+        // <Stories stories={stories.data}/>
      );
 }
  

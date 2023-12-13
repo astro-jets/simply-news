@@ -33,17 +33,17 @@ const NewPost = () => {
 
     async function handleSubmit(){
         console.log('file',formData)
-        const response = await fetch("https://simply-news-tau.vercel.app/api/blogs/new",{
-            method:"POST",
-            headers:{"content-type":"application/json"},
-            cache:'no-store',
-            body:JSON.stringify(formData)
-        });
-        const status = await response.json();
-        if(status.status === 'true')
-        {
-            console.log(status);
-        }
+        // const response = await fetch("/api/blogs/new",{
+        //     method:"POST",
+        //     headers:{"content-type":"application/json"},
+        //     cache:'no-store',
+        //     body:JSON.stringify(formData)
+        // });
+        // const status = await response.json();
+        // if(status.status === 'true')
+        // {
+        //     console.log(status);
+        // }
     }
     
     return ( 
