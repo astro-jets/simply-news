@@ -33,7 +33,7 @@ const NewPost = () => {
 
     async function handleSubmit(){
         console.log('file',formData)
-        const response = await fetch("http://localhost:3000/api/blogs/new",{
+        const response = await fetch("https://simply-news-tau.vercel.app/api/blogs/new",{
             method:"POST",
             headers:{"content-type":"application/json"},
             cache:'no-store',
