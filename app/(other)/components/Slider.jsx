@@ -1,3 +1,4 @@
+"use client"
 // Import necessary modules
 import Image from 'next/image';
 import { Carousel } from 'react-responsive-carousel';
