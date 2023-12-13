@@ -26,7 +26,7 @@ const Stories = ({stories}) => {
           {
             stories && stories.length ?
                 stories.map(s=>
-                    <a className="group rounded-xl overflow-hidden" href="/news/12345">
+                    <a className="group rounded-xl overflow-hidden" key={s._id} href={`/news/${s._id}`}>
                       <div className="relative pt-[50%] sm:pt-[70%] rounded-xl overflow-hidden">
                           <Image 
                             className="w-full h-full absolute top-0 left-0 object-cover group-hover:scale-105 transition-transform duration-500 ease-in-out rounded-xl" 

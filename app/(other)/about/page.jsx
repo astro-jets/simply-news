@@ -4,7 +4,7 @@ import { FaFacebook, FaInstagram, FaLinkedin } from "react-icons/fa";
 import { BsTwitterX } from "react-icons/bs";
 import { useEffect } from "react";
 
-const about = () => {
+const About = () => {
     useEffect(() => {import('preline')}, []);
     return ( 
         <div className="h-full">
@@ -171,4 +171,4 @@ const about = () => {
      );
 }
  
-export default about;
+export default About;

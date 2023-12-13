@@ -11,7 +11,7 @@ const initialFormData = {
     imageType:''
 }
 
-const newPost = () => {
+const NewPost = () => {
     useEffect(()=>{import('preline')},[])
     
     const [formData, setFormData] = useState(initialFormData);    
@@ -125,4 +125,4 @@ const newPost = () => {
      );
 }
  
-export default newPost;
+export default NewPost;
