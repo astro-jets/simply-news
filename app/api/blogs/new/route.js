@@ -3,7 +3,7 @@ import { NextResponse } from "next/server";
 
 
 export async function POST (req){
-    const {title,story,category} = await req.json();
+    const {title,story,category,image,imageType} = await req.json();
     try{
         const mongoClient = await clientPromise;
         // Databse Name
@@ -13,7 +13,7 @@ export async function POST (req){
         const collection = db.collection("blogs")
 
         const newBlog = await collection.insertOne({
-            title,story,category
+            title,story,category,image,imageType
         });
 
         if(newBlog){

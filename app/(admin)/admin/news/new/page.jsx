@@ -23,11 +23,12 @@ const NewPost = () => {
         const reader = new FileReader();
 
         reader.onload = (event) => {
-        setFormData({
-            ...formData,
-            image: new Buffer.from(event.target.result,'base64'),
-            imageType:file.type
-        });
+            const base64Image = Buffer.from(event.target.result).toString('base64');
+            setFormData({
+                ...formData,
+                image: base64Image,
+                imageType:file.type
+            });
         };
 
         reader.readAsArrayBuffer(file);

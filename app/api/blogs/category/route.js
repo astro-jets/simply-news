@@ -5,6 +5,8 @@ import { NextResponse } from "next/server";
 export async function GET(req,res)
 {
     try{
+        const {searchParams} = new URL(req.url);
+        const category = searchParams.get('category');
         const mongoClient = await clientPromise;
         // Databse Name
         const db = mongoClient.db("news");
@@ -14,8 +16,7 @@ export async function GET(req,res)
 
         // Fetch the data
         const results = await collection
-        .find({})
-        .limit(5)
+        .find({category:category})
         .toArray();  
 
         // Create an empty array to store converted blogs

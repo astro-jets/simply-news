@@ -3,6 +3,7 @@
 import Image from "next/image";
 import Ads from "./Ads";
 import { useEffect } from "react";
+import { BsHouse } from "react-icons/bs";
 
 
 const Stories = ({stories}) => { 
@@ -21,7 +22,16 @@ const Stories = ({stories}) => {
             <a href="/news/enviroment" className="scale-75 md:scale-100 dark:text-white bg-red-700 hover:text-white p-3 rounded-md">Enviroment</a>
           </div>
         </div>
-        {!stories?<h1 className="text-3xl text-black dark:text-white text-center w-full mt-16">No stories found!</h1>:null}
+        {!stories || !stories.length ?
+          <div className=" w-ful flex flex-col items-center space-y-6 mb-8">
+            <h1 className="text-3xl text-black dark:text-white text-center w-full mt-16">No stories found!</h1>
+            <a href="/" className="text-white bg-red-700 p-4 w-5/6 md:w-1/3 space-x-4 rounded-lg flex items-center justify-center">
+              <BsHouse color="#fff" size={20}/>
+              <p>Back Home</p>
+            </a>
+          </div>
+          :null
+        }
         <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
           {
             stories && stories.length ?
@@ -30,7 +40,7 @@ const Stories = ({stories}) => {
                       <div className="relative pt-[50%] sm:pt-[70%] rounded-xl overflow-hidden">
                           <Image 
                             className="w-full h-full absolute top-0 left-0 object-cover group-hover:scale-105 transition-transform duration-500 ease-in-out rounded-xl" 
-                            src='/2.png' 
+                            src={s.image}
                             alt="Image Description"
                             layout="fill"
                           />
