@@ -3,7 +3,12 @@ import HomePage from "./components/HomePage";
 export default async function Home() {
   const rootLink = process.env.ROOT_LINK;
   let blogs;
-  const response = await fetch(`${rootLink}/api/list`,{cache:'no-cache'});
+  const response = await fetch(`${rootLink}/api/list`,{
+    cache:'no-cache',
+    next:{
+      revalidate:10
+    }
+  });
   if (!response.ok) {
     console.log(await response.text());
   } else {
