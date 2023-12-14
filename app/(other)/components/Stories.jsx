@@ -30,7 +30,7 @@ const Stories = ({stories}) => {
                       <div className="relative pt-[50%] sm:pt-[70%] rounded-xl overflow-hidden">
                           <Image 
                             className="w-full h-full absolute top-0 left-0 object-cover group-hover:scale-105 transition-transform duration-500 ease-in-out rounded-xl" 
-                            src={s.image} 
+                            src='/2.png' 
                             alt="Image Description"
                             layout="fill"
                           />
@@ -41,7 +41,7 @@ const Stories = ({stories}) => {
 
                       <div className="mt-7">
                           <div className="flex items-center justify-between mb-1">
-                          <h1 className="text-white text-md">{s.author}</h1>
+                          <h1 className="text-white text-md">Mphatso</h1>
                           <span className="text-red-700 text-sm">12 Nov 2023</span>
                           </div>
                           <h3 className="text-xl font-semibold text-gray-800 group-hover:text-gray-600 dark:text-gray-200">
