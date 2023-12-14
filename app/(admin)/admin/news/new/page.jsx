@@ -1,5 +1,6 @@
 "use client"
 
+import Modal from "@/app/(admin)/components/Modal";
 import { useEffect, useState } from "react";
 
 // Initial state
@@ -13,7 +14,8 @@ const initialFormData = {
 
 const NewPost = () => {
     useEffect(()=>{import('preline')},[])
-    
+    const [isModalOpen, setIsModalOpen] = useState(false);
+    const [formKey, setFormKey] = useState(0);
     const [formData, setFormData] = useState(initialFormData);    
 
     const handleChangeImage = (event) => {
@@ -33,17 +35,20 @@ const NewPost = () => {
 
     async function handleSubmit(){
         console.log('file',formData)
-        // const response = await fetch("/api/blogs/new",{
-        //     method:"POST",
-        //     headers:{"content-type":"application/json"},
-        //     cache:'no-store',
-        //     body:JSON.stringify(formData)
-        // });
-        // const status = await response.json();
-        // if(status.status === 'true')
-        // {
-        //     console.log(status);
-        // }
+        const response = await fetch("/api/blogs/new",{
+            method:"POST",
+            headers:{"content-type":"application/json"},
+            cache:'no-store',
+            body:JSON.stringify(formData)
+        });
+        const status = await response.json();
+        if(status.status === 'true')
+        {
+            setIsModalOpen(true); // Open the modal 
+            setFormData(initialFormData);
+            setFormKey(prevKey => prevKey + 1);
+        }
+        
     }
     
     return ( 
@@ -57,7 +62,7 @@ const NewPost = () => {
 
             <div className="mt-12">
             {/* Form */}
-            <form>
+            <form key={formKey}>
                 <div className="grid gap-4 lg:gap-6">
                     <div>
                         <label for="title" className="block mb-2 text-sm text-gray-700 font-medium dark:text-white">Blog Title</label>
@@ -119,6 +124,7 @@ const NewPost = () => {
                 </div>
             </form>
             {/* End Form */}
+            <Modal isOpen={isModalOpen} message="Blog created successfully" onClose={() => setIsModalOpen(false)} />
             </div>
         </div>
         </div>
