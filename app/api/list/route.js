@@ -7,10 +7,10 @@ export async function GET(req,res)
     try{
         const mongoClient = await clientPromise;
         // Databse Name
-        const db = mongoClient.db("sample_restaurants");
+        const db = mongoClient.db("news");
 
         // Table
-        const collection = db.collection("restaurants");
+        const collection = db.collection("blogs");
 
         // Fetch the data
         const results = await collection
