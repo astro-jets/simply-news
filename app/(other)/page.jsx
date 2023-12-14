@@ -2,6 +2,8 @@
 // import { useEffect, useState } from "react";
 // import clientPromise from "@/lib/mongodb";
 
+import clientPromise from "@/lib/mongodb";
+
 // Components
 // import Stories from './components/Stories';
 // import AnnouncementBanner  from './components/AnnoucementBanner';
@@ -28,9 +30,13 @@ export default async function Home() {
 // }, []);
 
   const rootLink = process.env.ROOT_LINK;
+  let restaurants;
   const response = await fetch(`${rootLink}/api/list`,{cache:'no-cache'});
-  const restaurants = await response.json();
-
+  if (!response.ok) {
+    console.log(await response.text());
+  } else {
+      restaurants = await response.json();
+  }
   return (
       restaurants?
       // <>

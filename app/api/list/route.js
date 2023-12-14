@@ -22,5 +22,6 @@ export async function GET(req,res)
         return NextResponse.json(results)
     }catch(e){
         console.log("Failed to fetch Data => ",e);
+        return NextResponse.json({ error: 'Failed to fetch data'+e });
     }
 }
