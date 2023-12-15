@@ -5,11 +5,9 @@ const Category = async ({ params }) => {
     const rootLink = process.env.ROOT_LINK;
     const response = await fetch(`${rootLink}/api/blogs/category/?category=${category}`,
     {
-        next:{revalidate:10},
-        cache:'no-cache'
+        next:{revalidate:1}
     });
     const stories = await response.json();
-    // console.log("Stories by category => ",stories)
     
     return ( 
         <>

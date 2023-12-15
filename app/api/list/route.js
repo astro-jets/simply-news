@@ -24,16 +24,23 @@ export async function GET(req,res)
             return `data:${imageType};charset=utf-8;base64,${image.toString('base64')}`;
         };
 
+        const trimStory = async (story) => {
+            const words = story.split(" ");
+            const trimmedWords = words.slice(0, 8);
+            const trimmedParagraph = trimmedWords.join(" ");
+            return(trimmedParagraph);
+        }
+
          if (results.length > 0) {
             // Loop through each blog
             for (const blog of results) {
                 // Convert image for each blog
                 const convertedImage = convertImage(blog.image,blog.imageType);
-
+                const story = await trimStory(blog.story)
                 // Create an object for each blog with converted image
                 const convertedBlog = {
                 title: blog.title,
-                story: blog.story,
+                story: story,
                 category: blog.category,
                 image: convertedImage,
                 };

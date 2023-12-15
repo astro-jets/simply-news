@@ -4,13 +4,10 @@ export default async function Home() {
   const rootLink = process.env.ROOT_LINK;
   let blogs;
   const response = await fetch(`${rootLink}/api/list`,{
-    cache:'no-cache',
-    next:{
-      revalidate:10
-    }
+    cache:'no-cache'
   });
   if (!response.ok) {
-    console.log(await response.text());
+    console.log("The response is very bad");
   } else {
       blogs = await response.json();
   }
