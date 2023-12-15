@@ -16,10 +16,10 @@ const Stories = ({stories}) => {
 
         <div className="w-full flex justify-center overflow-hidden">
           <div className="flex flex-wrap justify-between mb-4 w-full md:w-1/2 md:mt-4">
-            <a href="/news/agriculture" className="scale-75 md:scale-100 dark:text-white bg-red-700 hover:text-white p-3 rounded-md">Agriculture</a>
-            <a href="/news/business" className="scale-75 md:scale-100 dark:text-white bg-red-700 hover:text-white p-3 rounded-md">Business</a>
-            <a href="/news/tech" className="scale-75 md:scale-100 dark:text-white bg-red-700 hover:text-white p-3 rounded-md">Tech</a>
-            <a href="/news/enviroment" className="scale-75 md:scale-100 dark:text-white bg-red-700 hover:text-white p-3 rounded-md">Enviroment</a>
+            <a href="/news/category/agriculture" className="scale-75 md:scale-100 dark:text-white bg-red-700 hover:text-white p-3 rounded-md">Agriculture</a>
+            <a href="/news/category/business" className="scale-75 md:scale-100 dark:text-white bg-red-700 hover:text-white p-3 rounded-md">Business</a>
+            <a href="/news/category/tech" className="scale-75 md:scale-100 dark:text-white bg-red-700 hover:text-white p-3 rounded-md">Tech</a>
+            <a href="/news/category/enviroment" className="scale-75 md:scale-100 dark:text-white bg-red-700 hover:text-white p-3 rounded-md">Enviroment</a>
           </div>
         </div>
         {!stories || !stories.length ?
@@ -36,7 +36,7 @@ const Stories = ({stories}) => {
           {
             stories && stories.length ?
                 stories.map(s=>
-                    <a className="group rounded-xl overflow-hidden" key={s._id} href={`/news/${s._id}`}>
+                    <a className="group rounded-xl overflow-hidden" key={s.id} href={`/news/single/${s.id}`}>
                       <div className="relative pt-[50%] sm:pt-[70%] rounded-xl overflow-hidden">
                           <Image 
                             className="w-full h-full absolute top-0 left-0 object-cover group-hover:scale-105 transition-transform duration-500 ease-in-out rounded-xl" 

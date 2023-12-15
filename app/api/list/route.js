@@ -15,7 +15,7 @@ export async function GET(req,res)
         // Fetch the data
         const results = await collection
         .find({})
-        .limit(5)
+        .limit(10)
         .toArray();  
 
         // Create an empty array to store converted blogs
@@ -39,10 +39,11 @@ export async function GET(req,res)
                 const story = await trimStory(blog.story)
                 // Create an object for each blog with converted image
                 const convertedBlog = {
-                title: blog.title,
-                story: story,
-                category: blog.category,
-                image: convertedImage,
+                    id:blog._id,
+                    title: blog.title,
+                    story: story,
+                    category: blog.category,
+                    image: convertedImage,
                 };
 
                 // Add the converted blog to the array

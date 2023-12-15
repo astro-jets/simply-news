@@ -18,6 +18,13 @@ const NewPost = () => {
     const [formKey, setFormKey] = useState(0);
     const [formData, setFormData] = useState(initialFormData);    
 
+    const crypto = require('crypto');
+
+    function generateBlogId() {
+        return crypto.randomBytes(16).toString('hex');
+    }
+
+
     const handleChangeImage = (event) => {
         const file = event.target.files[0];
         const reader = new FileReader();

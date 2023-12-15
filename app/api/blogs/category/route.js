@@ -30,13 +30,20 @@ export async function GET(req,res)
             for (const blog of results) {
                 // Convert image for each blog
                 const convertedImage = convertImage(blog.image,blog.imageType);
-
+                const trimStory = async (story) => {
+                    const words = story.split(" ");
+                    const trimmedWords = words.slice(0, 8);
+                    const trimmedParagraph = trimmedWords.join(" ");
+                    return(trimmedParagraph);
+                }
+                const story = await trimStory(blog.story)
                 // Create an object for each blog with converted image
                 const convertedBlog = {
-                title: blog.title,
-                story: blog.story,
-                category: blog.category,
-                image: convertedImage,
+                    id:blog._id,
+                    title: blog.title,
+                    story: story,
+                    category: blog.category,
+                    image: convertedImage,
                 };
 
                 // Add the converted blog to the array
