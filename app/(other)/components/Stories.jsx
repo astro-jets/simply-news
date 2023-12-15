@@ -33,6 +33,7 @@ const Stories = ({stories}) => {
           :null
         }
         <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
+          <Ads/>
           {
             stories && stories.length ?
                 stories.map(s=>
@@ -71,7 +72,6 @@ const Stories = ({stories}) => {
                 )
             : null
           }
-          {stories && stories.length ? <Ads/> : null}
         </div>
       </div>
     );
