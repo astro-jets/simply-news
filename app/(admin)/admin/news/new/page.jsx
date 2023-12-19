@@ -5,58 +5,49 @@ import { useEffect, useState } from "react";
 
 // Initial state
 const initialFormData = {
-    title:'',
-    category:'',
-    story:'',
-    image:'',
-    imageType:''
+    title: '',
+    category: '',
+    story: '',
+    image: '',
+    imageType: ''
 }
 
 const NewPost = () => {
-    useEffect(()=>{import('preline')},[])
+    useEffect(() => { import('preline') }, [])
     const [isModalOpen, setIsModalOpen] = useState(false);
     const [formKey, setFormKey] = useState(0);
-    const [formData, setFormData] = useState(initialFormData);    
-
-    const crypto = require('crypto');
-
-    function generateBlogId() {
-        return crypto.randomBytes(16).toString('hex');
-    }
-
+    const [formData, setFormData] = useState(initialFormData);
 
     const handleChangeImage = (event) => {
         const file = event.target.files[0];
         const reader = new FileReader();
 
-        reader.onload = (event) => {
-            const base64Image = Buffer.from(event.target.result).toString('base64');
+        // Changed to readAsDataURL to directly read the file as a Base64 string
+        reader.onloadend = () => {
             setFormData({
                 ...formData,
-                image: base64Image,
-                imageType:file.type
+                image: reader.result, // Base64 string of the image
+                imageType: file.type // Mime type of the image
             });
         };
 
-        reader.readAsArrayBuffer(file);
+        reader.readAsDataURL(file); // Reading the file as Data URL (Base64)
     };
 
-    async function handleSubmit(){
-        console.log('file',formData)
-        const response = await fetch("/api/blogs/new",{
-            method:"POST",
-            headers:{"content-type":"application/json"},
-            cache:'no-store',
-            body:JSON.stringify(formData)
+    async function handleSubmit() {
+        console.log('file', formData)
+        const response = await fetch("/api/blogs/new", {
+            method: "POST",
+            headers: { "Content-Type": "application/json" }, // Ensuring the Content-Type matches the payload type
+            cache: 'no-store',
+            body: JSON.stringify(formData) // Sending the formData as JSON
         });
         const status = await response.json();
-        if(status.status === 'true')
-        {
+        if (status.status === 'true') {
             setIsModalOpen(true); // Open the modal 
             setFormData(initialFormData);
             setFormKey(prevKey => prevKey + 1);
         }
-        
     }
     
     return ( 
